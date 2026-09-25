@@ -1,0 +1,87 @@
+        <div class="container static">
+            <h2 class="inside">Brak dostępu</h2>
+            <div class="container-background">
+                <div class="center">
+                    <img src="/images/stop.png"><br/>
+            <script type="text/javascript">
+        var linkButtonFn11ecbe5196e8038e3c54603e259b6b1a = function () {
+            var ask = false;
+            if (ask) {
+                var buttons = [
+                    {
+                        value: "Tak",
+                        click: function () {
+                            window.location.href = "https:\/\/synergia.librus.pl\/loguj\/przenies\/wiadomosci";
+                        }
+                    },
+                    {
+                        value: "Nie",
+                        close: true
+                    }
+                ];
+
+                show_message(
+                    'question',
+                    'Potwierdzenie',
+                    "",
+                    buttons,
+                    true
+                );
+                return false;
+            } else {
+                window.location.href="https:\/\/synergia.librus.pl\/loguj\/przenies\/wiadomosci";
+            }
+        }
+    </script>
+    <input
+        type="button"
+        value="Loguj"
+        class="small"
+        onclick="linkButtonFn11ecbe5196e8038e3c54603e259b6b1a()"
+                title=""
+        >
+                    </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            var windowParentObj = window.opener;
+            var popup = false;
+            if (windowParentObj && 1 == 1) {
+                try {
+                    if (windowParentObj.location.host == window.location.host) {
+                        popup = true;
+                    }
+                } catch(e) {
+
+                }
+            }
+
+            if(popup){
+                document.getElementById('loginButton').style.display = 'none';
+                if (windowParentObj.location.href != "https:\/\/synergia.librus.pl\/loguj") {
+                    var a = windowParentObj.document.createElement('a');
+                    if(!a.click) //for IE
+                    {
+                                                    windowParentObj.location = "https:\/\/synergia.librus.pl\/loguj" +"/przenies" + windowParentObj.location.pathname;
+                                            }
+
+                                            a.setAttribute("href", "https:\/\/synergia.librus.pl\/loguj" +"/przenies" + windowParentObj.location.pathname);
+                                            a.style.display = "none";
+                    windowParentObj.document.body.appendChild(a);
+                    a.click();
+                }
+            } else {
+                var a = document.createElement('a');
+
+                                if(!a.click) //for IE
+                {
+                                            window.location = "https:\/\/synergia.librus.pl\/loguj\/przenies\/wiadomosci";
+                                    }
+
+                                        a.setAttribute("href", "https:\/\/synergia.librus.pl\/loguj\/przenies\/wiadomosci");
+                                    a.style.display = "none";
+                window.document.body.appendChild(a);
+                a.click();
+            }
+        </script>
+        

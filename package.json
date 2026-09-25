@@ -1,0 +1,29 @@
+{
+  "name": "librus-api",
+  "version": "1.0.0",
+  "description": "Modułowa biblioteka Node.js do integracji z systemem Librus Synergia",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node --test test/**/*.test.js",
+    "test:auth": "node test/test-auth.js"
+  },
+  "keywords": [
+    "librus",
+    "synergia",
+    "librus-api",
+    "edziennik",
+    "scraper"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.0.0"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.7"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

@@ -1,0 +1,1884 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+    <html lang="pl-PL">
+   <head><title>LIBRUS Synergia</title>
+   <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+   <meta http-equiv="Reply-to" content="administrator@dziennik.librus.pl">
+   <meta http-equiv="Content-Language" content="pl">
+   <meta name="Keywords" content="dziennik, elektroniczny, edukacja, oświata, programy, komputerowe, edziennik, e-dziennik, synergia">
+   <meta name="Description" content="Dziennik elektroniczny">
+   <meta name="robots" content="noindex, nofollow" />
+        <link rel="shortcut icon" href="/images/synergia.ico">
+                    <link rel="stylesheet" href="/js/librus-component/data-table/librus-data-table.css?v2" />
+        <link rel="stylesheet" href="/js/librus-component/panel/librus-panel.css?v1" />
+        <link rel="stylesheet" href="/js/librus-component/notification/librus-notification.css?v4" />
+        <link rel="stylesheet" href="/js/librus-component/dialog/librus-dialog.css?v1" />
+        <link rel="stylesheet" href="/js/jquery/themes/base/jquery.ui.all.1285316921.css" type="text/css"><link rel="stylesheet" href="/js/jquery/jquery-ui-1.9.2.custom/css/librus/jquery-ui-1.9.2.custom.min.1422664051.css" type="text/css"><link rel="stylesheet" href="/js/jquery/jquery-ui-1.9.2.custom/css/librus/librus-aditional.1507325373.css" type="text/css"><script type="text/javascript" src="/js/jquery/jquery-ui-1.9.2.custom/js/jquery-1.8.3.1360569100.js"></script><script type="text/javascript" src="/js/jquery/jquery.form.1615587149.js"></script><script type="text/javascript" src="/js/jquery/jquery-ui-1.9.2.custom/js/jquery-ui-1.9.2.custom.min.1361447290.js"></script>        <script type="text/javascript" src="/js/newLayout/jquery.mask.min.js"></script>
+        <script type="text/javascript" src="/js/LibrusJQueryTheme.js"></script>
+        <script type="text/javascript" src="/js/rowCollection.js"></script>
+        <script type="text/javascript" src="/js/quickSearchTool.js"></script>
+        <script type="text/javascript" src="/js/CsrfProtection.js"></script>
+        <script type="text/javascript">
+            var csrfTokenName = "requestkey";
+            var csrfTokenValue = "MC40NDQyOTQwMCAxNzkwMzMxMTA5XzJlZTUzYjFjZDE3YjBmMTgwMzA1NTIwYzBmZDY3ZWZj";
+        </script>
+            <script type='text/javascript'>
+        var APP_SETTINGS = new Object();
+        Object.defineProperties(APP_SETTINGS, {
+            idw_content_domain: {
+                value: "https://synergia.indywidualni.pl",
+                enumerable: true
+            }
+        });
+    </script>
+    <script type="text/javascript" src="/js/fileValidator.1535145151.js"></script><script type="text/javascript" src="/js/CloudStorageBrowseTool.1507325373.js"></script><script type="text/javascript" src="/js/indywidualni.1666094592.js"></script><script type="text/javascript" src="/js/connectRMNToLesson.1507325373.js"></script><script type="text/javascript" src="/js/libs/redom/redom.min.1575670839.js"></script><script type="text/javascript" src="/js/libs/lodash/lodash.min.1575670839.js"></script><script type="text/javascript" src="/js/libs/moment/moment.min.1596795859.js"></script><script type="text/javascript" src="/js/libs/navigo/navigo.min.1581718575.js"></script><script type="text/javascript" src="/js/util/util.1581718575.js"></script><script type="text/javascript" src="/js/librus-component/data-table/librus-data-table.1596795859.js"></script><script type="text/javascript" src="/js/librus-component/panel/librus-panel.1581718575.js"></script><script type="text/javascript" src="/js/librus-component/notification/librus-notification.1596795859.js"></script><script type="text/javascript" src="/js/librus-component/dialog/librus-dialog.1585948224.js"></script><script type="text/javascript" src="/js/jquery/fancybox/jquery.fancybox-1.3.4.1332493810.js"></script>        <script type="text/javascript">
+            CSRF_PROTECTION.startAddingCsrfTokenTo($, csrfTokenName, csrfTokenValue);
+        </script>
+           <script src="/js/jquery/jquery-ui-timepicker-addon.js"></script>      <script src="/assets/js/fancybox/jquery.fancybox-1.3.4.pack.js" type="text/javascript"></script>
+   <link href="/assets/css/fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet" type="text/css"/>
+   <script>// HOTFIX: We can't upgrade to jQuery UI 1.8.6 (yet)
+    // This hotfix makes older versions of jQuery UI drag-and-drop work in IE9
+    (function($){var a=$.ui.mouse.prototype._mouseMove;$.ui.mouse.prototype._mouseMove=function(b){if($.browser.msie&&document.documentMode>=9){b.button=1};a.apply(this,[b]);}}(jQuery));</script>
+
+              <!--<script type="module" src="/js/2fa.js"></script>-->
+        <script type="module" src="/js/strefa-klienta-info.js"></script>
+        <script type="text/javascript" src="/js/specialist_register.1786741639.js"></script>        <link rel="stylesheet" href="/LibrusStyleSheet2.1786741639.css" type="text/css" media="screen">        <link rel="stylesheet" href="/LibrusPrintStyleSheet2.1495831305.css" type="text/css" media="print">        <!--[if !IE]><!-->
+        <link rel="stylesheet" href="/LibrusStyleSheet2NonIE.1361960241.css" type="text/css" media="screen">        <!--<![endif]-->
+        <!--[if IE]>
+        <link rel="stylesheet" href="/LibrusStyleSheet2IE.1615587149.css" type="text/css" media="screen">        <![endif]-->
+        <!--[if IE 7]>
+        <link rel="stylesheet" href="/LibrusStyleSheet2IE7.1371460280.css" type="text/css" media="screen">        <![endif]-->
+        <!--[if IE 8]>
+        <link rel="stylesheet" href="/LibrusStyleSheet2IE8.1367217179.css" type="text/css" media="screen">        <![endif]-->
+        <!--[if IE 9]>
+        <link rel="stylesheet" href="/LibrusStyleSheet2IE9.1366628972.css" type="text/css" media="screen">        <![endif]-->
+        <link rel="stylesheet" href="/LibrusStyleSheet2Light.1774650888.css" type="text/css" media="screen"><link rel="stylesheet" href="/assets/css/synergia.1731710352.css" type="text/css" media="screen"><link rel="stylesheet" href="/assets/css/style.1679696063.css" type="text/css" media="screen"><script type="text/javascript" src="/assets/js/synergia/main.1438948866.js"></script>        <script type="text/javascript">
+            var appName1 = 'LIBRUS Synergia';
+            var appName2 = 'LIBRUS Synergia';
+            var appName3 = 'LIBRUS Synergia';
+            var appName4 = 'LIBRUS Synergia';
+            var appName5 = 'LIBRUS Synergia';
+            var appName6 = 'LIBRUS Synergia';
+            var appName7 = 'LIBRUS Synergia';
+        </script>
+        <link rel="stylesheet" type="text/css" media="screen" href="/js/newLayout/SparkBoxSelect/sparkbox-select.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="/jquery.treeview.css" />
+
+            <script type="text/javascript" src="/js/cookie.js" ></script>
+       <script type="text/javascript" src="/js/uklad_strony2.1786741639.js"></script>
+
+   <script type="text/javascript" src="/js/newLayout/SparkBoxSelect/jquery.sparkbox-select.js" ></script>
+        <link rel="stylesheet" href="/assets/css/tippy/tippy.css" />
+        <link rel="stylesheet" href="/assets/css/tippy-theme.css" />
+        <script type="text/javascript" src="/assets/js/polyfilles/object-assign.min.js"></script>
+        <script type="text/javascript" src="/assets/js/polyfilles/promise-polyfill.min.js"></script>
+        <script type="text/javascript" src="/assets/js/polyfilles/find.js"></script>
+        <script type="text/javascript" src="/assets/js/popper/popper.min.js"></script>
+        <script type="text/javascript" src="/assets/js/tippy/tippy.umd.min.js"></script>
+        <script src="/js/newLayout/amCharts.js" type="text/javascript"></script>
+        <script src="/js/validators.js" type="text/javascript" ></script>
+        <script src="/js/ErrorProvider.js" type="text/javascript"></script>
+        <script src="/js/newLayout/rgbcolor.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/modules/Sekretariat/js/SKFOldInterface/Utils.1628259749.js"></script><script type="text/javascript" src="/js/newLayout/newLayoutJS.1772235712.js"></script><script type="text/javascript" src="/js/newLayout/newLayoutJSExecutes.1754074247.js"></script>    <!--[if IE 7]>
+    <script type="text/javascript" src="/js/newLayout/newLayoutJSIE7.1368708313.js"></script>    <![endif]-->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="/js/newLayout/newLauoutJSltIE9.1375344710.js"></script>    <![endif]-->
+    <link rel="stylesheet" href="/js/jquery/jquery.multiselect.1628259749.css" type="text/css">    <script type="text/javascript" src="/js/jquery/jquery.multiselect.1422664051.js"></script>    <script type="text/javascript" src="/assets/js/synergia/MultiselectLibrus.1565269166.js"></script>    <script type="text/javascript" src="/js/pobierz_date_wywiadowki2.1495831305.js"></script>    <script type="text/javascript" src="/js/pobierz_email4.1535749794.js"></script>       <!--[if lt IE 9]>
+   <script type="text/javascript">
+   $(document).ready(function(){
+        $(window).on("resize", function(){
+            simMediaQuery();
+        });
+
+        simMediaQuery();
+
+        function simMediaQuery(){
+            var widthTrigger = 1100;
+            var viewportW = parseInt($(window).width());
+            if (viewportW > widthTrigger){
+                if( $('#interfejs-lekcyjny').length <= 0 || parseInt( $('#body').css("padding-left") ) < 50 ) {
+                    $('#body').css({"padding-left" : "50px"});
+                }
+                $('#body').css({"padding-right" : "50px"});
+            } else {
+                if( $('#interfejs-lekcyjny').length <= 0 ) {
+                    $('#body').css({"padding-left" : "0"});
+                }
+                $('#body').css({"padding-right" : "0"});
+            }
+        }
+
+    });
+   </script>
+   <![endif]-->
+   <script type="text/javascript" src="/ajax.js"></script>
+   <script type="text/javascript">
+
+	<!--
+	var ajax = new sack();
+	var ajax1 = new sack();
+	var ajax2 = new sack();
+	var ajax3 = new sack();
+	var ajax4 = new sack();
+	var ajaxLesBar = new sack();
+	var ajaxKomMenu = new sack();
+	var edit_success = false; // wykorzystywane w onload przy hospitacjach
+	var isInterfaceMinimalize = 0;
+	var isInterfaceHide = 0;
+
+	/*
+       Function: getLessonsList
+
+       Function gets lessons list.
+
+       Author:
+            Dariusz Kozka <dariusz.kozka[at]librus.pl>
+
+       Parameters:
+
+            int 	sel - idetifier of class.
+            int 	pick - identifier of selected lesson.
+
+    */
+	function getLessonsList(sel, pick)
+	{
+		var klasa = sel;
+		if(klasa > 0)
+		{
+			if(pick)
+			{
+				var selected = '&selected=' + pick;
+			}
+			else
+			{
+				var selected = '';
+			}
+			document.getElementById('lekcja').options.length = 0;
+			if(klasa.length>0)
+			{
+				ajax2.requestFile = "https:\/\/synergia.librus.pl" + '/ajax/combos_lekcje.php?klasa=' + klasa + selected;
+				ajax2.onCompletion = createLessons;
+				ajax2.onLoading = showLessonWaitMessage;
+				ajax2.runAJAX();
+			}
+		}
+	}
+
+    /*
+       Function: createLessons
+
+       Function create lessons.
+
+       Author:
+            Dariusz Kozka <dariusz.kozka[at]librus.pl>
+
+    */
+	function createLessons()
+	{
+		document.getElementById('lekcja').options.length = 0;
+		var obj = document.getElementById('lekcja');
+		eval(ajax2.response);
+	}
+
+    /*
+       Function: showLessonWaitMessage
+
+       Function shows lesson wait message.
+
+       Author:
+            Dariusz Kozka <dariusz.kozka[at]librus.pl>
+
+    */
+	function showLessonWaitMessage()
+	{
+		document.getElementById('lekcja').options[document.getElementById('lekcja').options.length] = new Option('Trwa generowanie listy...', '');
+	}
+
+    /*
+       Function: hideSubmenuLayer
+
+       Function hide submenu layer.
+
+       Author:
+            Dariusz Kozka <dariusz.kozka[at]librus.pl>
+
+    */
+	function hideSubmenuLayer()
+	{
+		var tool = document.getElementById('tooltip');
+		if(tool)
+		{
+			document.body.removeChild(tool);
+		}
+		var ajax_loader = '<div style="text-align: center;">Ładowanie ustawień ...</div>';
+		ajax.requestFile = "https:\/\/synergia.librus.pl" + '/ajax/pozycje_obiektow.php?action=hide&objectType=interfejsSubmenu&isInterfaceMin='+isInterfaceMinimalize;
+		ajax.onCompletion = loadCoords;
+		ajax.onLoading = showWaitMessage;
+		ajax.runAJAX();
+		dd.elements.interfejsSubmenu.hide(true);
+		function showWaitMessage()
+		{
+			document.getElementById('interfejsSubmenu').innerHTML = ajax_loader;
+		}
+
+		function loadCoords()
+		{
+			document.getElementById('interfejsSubmenu').innerHTML = ajax.response;
+		}
+	}
+
+    /*
+       Function: minimalizeInterface
+
+       Function minimalize interface.
+
+       Author:
+            Dariusz Kozka <dariusz.kozka[at]librus.pl>
+
+    */
+	function minimalizeInterface()
+	{
+		var menu = document.getElementById('interfejsmenu');
+		var minImg = document.getElementById('minimalizeInterfaceIMG');
+		var maxImg = document.getElementById('maximalizeInterfaceIMG');
+		if(menu && maxImg && minImg){
+			menu.style.display = 'none';
+			minImg.style.display = 'none';
+			maxImg.style.display = '';
+			isInterfaceMinimalize = 1;
+			ajax4.requestFile = "https:\/\/synergia.librus.pl" + '/ajax/stan_minimalizacji_interfejsu.php?isInterfaceMin='+isInterfaceMinimalize;
+			ajax4.runAJAX();
+
+		}
+	}
+
+    /*
+       Function: maximalizeInterface
+
+       Function maximalize interface.
+
+       Author:
+            Dariusz Kozka <dariusz.kozka[at]librus.pl>
+
+    */
+	function maximalizeInterface()
+	{
+		var minImg = document.getElementById('minimalizeInterfaceIMG');
+		var maxImg = document.getElementById('maximalizeInterfaceIMG');
+		var menu = document.getElementById('interfejsmenu');
+		if(menu && maxImg && minImg){
+			menu.style.display = '';
+			minImg.style.display = '';
+			maxImg.style.display = 'none';
+			isInterfaceMinimalize = 0;
+			ajax4.requestFile = "https:\/\/synergia.librus.pl" + '/ajax/stan_minimalizacji_interfejsu.php?isInterfaceMin='+isInterfaceMinimalize;
+			ajax4.runAJAX();
+		}
+	}
+
+    /*
+      Class: lessonBarStatus
+
+      Description:
+      LessonBar object with refresh functionality
+
+      Author:
+      Krzysztof Żerucha <krzysztof.zerucha[at]librus.pl>
+    */
+
+    var lessonBarStatus = function(lessonStart, lessonEnd, now, lessonNumber)
+    {
+        if (!Number.isInteger(lessonStart) || lessonStart < 0) {
+            throw new Error("Wrong type of input variable 'lessonStart'. Expected non-negative integer.");
+        }
+
+        if (!Number.isInteger(lessonEnd) || lessonEnd < 0) {
+            throw new Error("Wrong type of input variable 'lessonEnd'. Expected non-negative integer.");
+        }
+
+        if (lessonStart >= lessonEnd) {
+            throw new Error("Wrong value of 'lessonStart' or 'lessonEnd'. 'lessonStar' is later than 'lessonEnd'.");
+        }
+
+        if (!Number.isInteger(now) || now < 0) {
+            throw new Error("Wrong type of input variable 'now'. Expected non-negative integer.");
+        }
+
+        if ((!Number.isInteger(lessonNumber) || lessonNumber < 0) && lessonNumber !== null) {
+            throw new Error("Wrong type of input variable 'lessonNumber'. Expected non-negative integer or null.");
+        }
+
+        if (document.getElementById('progressBarLekcja') === null) {
+            throw new Error("progressBarLekcja not found");
+        }
+
+        if (document.getElementById('progressBarText') === null) {
+            throw new Error("progressBarText not found");
+        }
+
+        var lessonStart = lessonStart;
+        var lessonEnd = lessonEnd;
+        var actualTimeForLessonBar = now;
+        var lessonNumber = lessonNumber;
+        var divBar = document.getElementById('progressBarLekcja');
+        var divTxtNr = document.getElementById('progressBarText');
+        var lessonBarInterval;
+        this.refresh = function() {
+            var actualTime = actualTimeForLessonBar;
+            actualTimeForLessonBar += 60;
+            var percent = 0;
+            var remainingMinutes = 0;
+            if (lessonNumber !== null) {
+                percent = 100;
+                if (actualTime <= lessonEnd) {
+                    var percent = (actualTime - lessonStart) / (lessonEnd - lessonStart) * 100;
+                    var remainingMinutes = parseInt((lessonEnd - actualTime) / 60);
+                }
+
+                divBar.style.width = percent + '%';
+                divTxtNr.innerHTML = 'Do końca lek. nr ' + lessonNumber + ': <span class="progressBarTextMinutes">' + remainingMinutes + ' min</span>';
+            } else {
+                divTxtNr.innerHTML = 'Do końca lekcji';
+                this.stopInterval();
+            }
+
+            if (percent >= 100) {
+                this.stopInterval();
+            }
+        }
+    };
+
+    lessonBarStatus.prototype.startInterval = function() {
+        var self = this;
+        lessonBarInterval = window.setInterval(function() {self.refresh();}, 60000);
+        self.refresh();
+    };
+
+    lessonBarStatus.prototype.stopInterval = function() {
+        clearInterval(lessonBarInterval);
+    };
+
+	function ustaw_komunikat_menu(stan)
+	{
+		ajaxKomMenu.requestFile = "https:\/\/synergia.librus.pl" + '/ajax/ustaw_komunikat_menu.php?stan='+stan;
+		ajaxKomMenu.execute = true;
+		ajaxKomMenu.runAJAX();
+
+	}
+
+    function ustaw_komunikat_archiwum(stan)
+	{
+		ajaxKomMenu.requestFile = "https:\/\/synergia.librus.pl" + '/ajax/ustaw_komunikat_archiwum.php?stan='+stan;
+		ajaxKomMenu.execute = true;
+		ajaxKomMenu.runAJAX();
+
+	}
+
+	function zmien_typ_menu(stan)
+	{
+            $.ajax({
+                dataType: "json",
+                type: "post",
+                url: '/ajax/zmien_typ_menu_adv.php',
+                data: 'stan='+stan,
+                success: function(data){
+                    if( data["SUCCESS"] ) {
+                        var html = $.parseHTML( data["CONTENT"], document, true );
+                        var scripts = [];
+                        var found = null;
+                        $.each( html, function( i, el ) {
+                            if(el.nodeName == 'SCRIPT') {
+                                scripts[i] = el;
+                            } else if(el.nodeName != '#text') {
+                                if($(el).attr("id") == "header") {
+                                    found = $(el);
+                                }
+                            }
+                        });
+                        if (found.length > 0) {
+                            $("#header").replaceWith(found);
+                            setTimeout(function(){
+                                $.each( scripts, function( i, el ) {
+                                    $("#header").append(el);
+                                });
+                            }, 500);
+                        }
+                    }
+                }
+            });
+	}
+
+    var interfejs_fold_object = function()
+    {
+        var res = new Object();
+        $('#interfejs-lekcyjny div[id^="g_"]').each(function() {
+            res[$(this).attr('id')] = !$(this).is(':visible');
+        });
+
+        return res;
+    };
+
+//------------
+
+//-->
+ </script>
+
+
+
+ <script type="text/javascript" src="/js/ImageSwaper.js"></script>
+
+
+<script type="text/javascript" charset="UTF-8">
+/* <![CDATA[ */
+try { if (undefined == xajax.config) xajax.config = {}; } catch (e) { xajax = {}; xajax.config = {}; };
+xajax.config.requestURI = "https://synergia.librus.pl/ogloszenia?action=opublikowane";
+xajax.config.statusMessages = false;
+xajax.config.waitCursor = true;
+xajax.config.version = "xajax 0.5 rc2";
+xajax.config.legacy = false;
+xajax.config.defaultMode = "asynchronous";
+xajax.config.defaultMethod = "POST";
+/* ]]> */
+</script>
+<script type="text/javascript" src="/funkcje/xajax/xajax_js/xajax_core.js" charset="UTF-8"></script>
+<script type="text/javascript" charset="UTF-8">
+/* <![CDATA[ */
+window.setTimeout(
+ function() {
+  var scriptExists = false;
+  try { if (xajax.isLoaded) scriptExists = true; }
+  catch (e) {}
+  if (!scriptExists) {
+   alert("Error: the xajax Javascript component could not be included. Perhaps the URL is incorrect?\nURL: /funkcje/xajax/xajax_js/xajax_core.js");
+  }
+ }, 2000);
+/* ]]> */
+</script>
+
+<script type='text/javascript' charset='UTF-8'>
+/* <![CDATA[ */
+xajax_pobierzArtykulPomocy = function() { return xajax.request( { xjxfun: 'pobierzArtykulPomocy' }, { parameters: arguments } ); };
+xajax_pobierzDzialPomocy = function() { return xajax.request( { xjxfun: 'pobierzDzialPomocy' }, { parameters: arguments } ); };
+xajax_ustaw_komunikat_menu = function() { return xajax.request( { xjxfun: 'ustaw_komunikat_menu' }, { parameters: arguments } ); };
+xajax_ustaw_komunikat_archiwum = function() { return xajax.request( { xjxfun: 'ustaw_komunikat_archiwum' }, { parameters: arguments } ); };
+xajax_zmien_typ_menu = function() { return xajax.request( { xjxfun: 'zmien_typ_menu' }, { parameters: arguments } ); };
+/* ]]> */
+</script>
+        <script type="text/javascript">
+            if (xajax) {
+                xajax.config.postHeaders["requestkey"] = "MC40NDQyOTQwMCAxNzkwMzMxMTA5XzJlZTUzYjFjZDE3YjBmMTgwMzA1NTIwYzBmZDY3ZWZj";
+            }
+        </script>
+        </head>
+<body onload="ImageSwaper.GetInstance().Load(); ">
+
+<script type="text/javascript" src="/js/NotificationCenter.1596795859.js"></script><div id="preloader-box"  style="display: none;">
+    <div id="preloader-curtain"></div>
+    <div id="preloader">
+        <span id="preloader-logo"></span>
+        <span id="preloader-loader"></span>
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ajaxStart(function(){window.jQueryPreloaderTimeout = setTimeout(turn_preloader_on, 1)})
+               .ajaxStop(function(){clearTimeout(window.jQueryPreloaderTimeout); turn_preloader_off()});
+
+    $(document).ready(function()
+    {
+        $('#yellowCard_1').draggable(
+            { handle: "#yellowCard_1_DraggHandle" },
+            { stop: function() {
+                var left = $('#yellowCard_1').position().left;
+                var top = $('#yellowCard_1').position().top;
+                if (left < 0) {
+                    left = 0;
+                    $('#yellowCard_1').position().left = 0;
+                }
+                if (top < 0) {
+                    top = 0;
+                    $('#yellowCard_1').position().top = 0;
+                }
+                $("#yellowCard_1").offset({ top: top, left: left});
+                var arr = jQuery.makeArray();
+                interface_object_save_position("yellowCard_1", left, top, arr);
+            }
+          }
+        );
+    });
+
+</script>
+        <div class="yellowCard  maximalize " class="screen-only ui-widget-content draggable"
+                id="yellowCard_1"
+        style=" left: 0px; top: 0px; display: none;"
+    >
+        <div class="titleYellowCard  maximalize " id="yellowCard_1_DraggHandle"
+            onmouseup="interface_object_save_position('yellowCard_1', $(this.parentNode).offset().left, $(this.parentNode).offset().top, interfejs_fold_object());"
+        >
+            <div class="content"></div>
+        </div>
+        <div class="yellowCardClose" onmouseup="return false;" onclick='yellowCardAction("close", "yellowCard_1");'>
+            <a href="javascript:void(0);"></a>
+        </div>
+                        <div class="yellowCardMinimalize" onclick='yellowCardAction("minimalize", "yellowCard_1");' ></div>
+                <div class="yellowCardMaximalize" onclick='yellowCardAction("maximalize", "yellowCard_1");' style="display:none;" ></div>
+                     <div class="cardBody" >
+            <div class="content"></div>
+        </div>
+    </div>
+    <script type="text/javascript">$('#yellowCard_1').offset({ top: screen.height/2-150, left: screen.width/2-150});</script>
+<script type="text/javascript" src="/wz_dragdrop.js"></script>
+ <!--
+ <div id="kontener">
+ <div id="baner"><img src="/images/baner_top1.jpg"></div>
+  -->
+    <div id="page" class="altum">
+        <div id="header">    <div id="main-navigation-container">
+        <div id="main-navigation">            <div id="main-menu">
+                <ul class="main-menu-list">
+                    <li><a href="/wyloguj">Wyloguj</a></li>                    <li><a href="/help/D13" target="_blank">Pomoc</a></li>                    <li><a href="/ustawienia">Ustawienia</a></li>                    <li><a href="/ankiety_admin_ankiety">Ankiety</a></li>
+                    <li>
+                        <a href="javascript: void(null);">Uczeń</a>
+                        <ul>                            <li><a href="/uwagi">Uwagi</a></li>                            <li><a href="/szczegolne_osiagniecia_ucznia">Szczególne osiągnięcia</a></li>                            <li><a href="/informacja">Informacje</a></li>                        </ul>
+                    </li>                    <li>
+                        <a href="javascript: void(null);">Organizacja</a>
+                        <ul>
+                            <li><a href="javascript:otworz_w_nowym_oknie('/przegladaj_plan_lekcji','plan_u',0,0)">Plan lekcji</a></li>
+                            <li><a href="/dyzury">Dyżury</a></li>                            <li><a href="/zaplanowane_lekcje">Lekcje</a></li>                            <li><a href="/pliki_szkoly">Pliki&nbsp;szkoły</a></li>                        </ul>
+                    </li>                    <li>
+                        <a href="javascript: void(null);">Świetlica</a>
+                        <ul>
+                            <li><a href="/panel_rodzica/swietlica/wygenerowane_kody">Kody PIN</a></li>
+                            <li><a href="/panel_rodzica/swietlica/osoby_uprawnione">Osoby uprawnione</a></li>
+                        </ul>
+                    </li>                    <li>
+                        <a href="https://eduranga.pl/librus" target="_blank">EDURANGA</span></a>
+                    </li>                </ul>
+            </div>
+        </div>
+    </div>    <div id="top-banner-container">
+        <a href="/rodzic/index             "             >
+            <img id="top-banner" src="/assets/img/synergia/header/benners/default.png         " />
+        </a>        <div id="graphic-menu">
+            <ul>        <li>
+            <a title="Widok alternatywny" href="/gateway/ms/studentdatapanel/ui/" id="icon-wcag">
+                <span class="circle"></span> Widok alternatywny
+            </a>
+        </li>                    <li><a          href="/przegladaj_oceny/uczen" id="icon-oceny"><span class="circle"></span>Oceny</a>
+                    </li>
+                    <li>
+                        <a          href="/przegladaj_nb/uczen" id="icon-nb">
+                            <span class="circle"></span>Frekwencja
+                        </a>
+                    </li>
+                <li><a  		href="/wiadomosci"         id="icon-wiadomosci"><span class="circle"></span>Wiadomości</a>                <li><a          href="/ogloszenia" id="icon-ogloszenia"><span class="circle"></span>Ogłoszenia</a>                        </li>
+                <li><a          href="/terminarz" id="icon-terminarz"><span class="circle"></span>Terminarz</a>                            </li>
+                    <li><a          href="/moje_zadania" id="icon-zadania"><span class="circle"></span>Zadania domowe</a>                    </li>
+            </ul>
+        </div>    </div>
+    <div id="user-section">
+szczęśliwy numerek: <span class="luckyNumber">&nbsp;<b>26</b>&nbsp;</span> &nbsp;&nbsp; <span class="tooltip" title="&lt;b&gt;ostatnie udane logowania:&lt;/b&gt;&lt;br /&gt;2026-09-25 12:11:49, IP: 194.9.79.152&lt;br /&gt;2026-09-25 12:10:12, IP: 194.9.79.152&lt;br /&gt;2026-09-25 12:03:49, IP: 194.9.79.152&lt;br /&gt;2026-09-25 11:58:11, IP: 194.9.79.152&lt;br /&gt;2026-09-25 11:57:38, IP: 194.9.79.152&lt;br /&gt;&lt;b&gt;ostatnie nieudane logowania:&lt;/b&gt;&lt;br /&gt;brak">historia logowań </span>&nbsp;<img class="tooltip helper-icon" alt="&lt;b&gt;ostatnie udane logowania:&lt;/b&gt;&lt;br /&gt;2026-09-25 12:11:49, IP: 194.9.79.152&lt;br /&gt;2026-09-25 12:10:12, IP: 194.9.79.152&lt;br /&gt;2026-09-25 12:03:49, IP: 194.9.79.152&lt;br /&gt;2026-09-25 11:58:11, IP: 194.9.79.152&lt;br /&gt;2026-09-25 11:57:38, IP: 194.9.79.152&lt;br /&gt;&lt;b&gt;ostatnie nieudane logowania:&lt;/b&gt;&lt;br /&gt;brak" title="&lt;b&gt;ostatnie udane logowania:&lt;/b&gt;&lt;br /&gt;2026-09-25 12:11:49, IP: 194.9.79.152&lt;br /&gt;2026-09-25 12:10:12, IP: 194.9.79.152&lt;br /&gt;2026-09-25 12:03:49, IP: 194.9.79.152&lt;br /&gt;2026-09-25 11:58:11, IP: 194.9.79.152&lt;br /&gt;2026-09-25 11:57:38, IP: 194.9.79.152&lt;br /&gt;&lt;b&gt;ostatnie nieudane logowania:&lt;/b&gt;&lt;br /&gt;brak" src="/images/pomoc_ciemna.png" />&nbsp; | jesteś zalogowany jako: <b>
+Aleksander Sas&nbsp;(rodzic&nbsp;<img class="tooltip helper-icon" alt="Dane można zmienić w konfiguracji" title="Dane można zmienić w konfiguracji" src="/images/pomoc_ciemna.png" />&nbsp;)</b>
+    <select style="width: 80px; height: 20px;" name="Język" id="language" onchange="window.location.href=this.value;">
+        <option value="/gateway/ms/studentdatapanel/ui/">polski</option>
+        <option value="/gateway/ms/studentdatapanel/ui/angielska-instrukcja">english</option>
+        <option value="/gateway/ms/studentdatapanel/ui/rosyjska-instrukcja">русский</option>
+        <option value="/gateway/ms/studentdatapanel/ui/ukrainska-instrukcja">український</option>
+    </select>
+    </div>
+</div>
+
+
+
+<script type="text/javascript">
+    function zapiszPaddingStrony( padding ) {
+        $.ajax({
+            type: "POST",
+            url: '/ajax/setPagePadding.php',
+            data: 'enlarge='+padding,
+            success: function() {
+            },
+            error: function() {
+            }
+          });
+    }
+        $(document).ready(function() {
+        if( window.width <= 1024 ) {
+            zapiszPaddingStrony(1);
+            $("#body").css("padding-left","0");
+            $("#body").css("padding-right","0");
+        }
+    });
+        </script>
+<div id="left-widgets-container">
+    </div>
+<div id="body"  >
+<div id="missing-2fa-warning"></div>
+
+            <div class="container static"><h2 class="inside">Ogłoszenia - Tablica ogłoszeń</h2>
+                
+                <div class="container-background"><script type="text/javascript" src="/assets/js/synergia/noticeboard.js"></script><table class="decorated big center printable margin-top">
+    <thead>
+        <tr>
+            <td colspan="2">ALFIK MATEMATYCZNY - Og&oacute;lnopolski Konkurs Matematyczny edycja XXXII</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="line1">
+            <th class="medium">Dodał</th>
+            <td>Katarzyna Wojciechowska</td>
+        </tr>
+        <tr class="line0">
+            <th>Data publikacji</th>
+            <td>2026-09-25</td>
+        </tr>
+        <tr class="line1">
+            <th>Treść</th>
+            <td>ALFIK MATEMATYCZNY - Og&oacute;lnopolski Konkurs Matematyczny edycja XXXII<br />
+<br />
+Serdecznie zapraszamy chętnych uczni&oacute;w z klas 1-3 do udziału w Og&oacute;lnopolskim Konkursie Alfik Matematyczny<br />
+<br />
+Konkurs odbędzie się 19 listopada 2026r. o godz. 9:00. Czas trwania konkursu 75 min + 15 min czynności organizacyjne.<br />
+<br />
+Opłata wpisowa za konkurs wynosi 19 zł. Opłaty od chętnych uczni&oacute;w przyjmować będą wychowawcy klas I-III lub bezpośrednio koordynator konkursu do 30 października 2026r.<br />
+<br />
+Wszystkie informacje na stronie: https://jersz.pl/konkurs/alfik-matematyczny/<br />
+<br />
+Regulamin konkursu:<br />
+<br />
+&sect; 1. Organizator i postanowienia og&oacute;lne<br />
+Organizatorem konkursu ALFIK MATEMATYCZNY XXXII jest Miłosz Słomian, prowadzący działalność gospodarczą pod firmą Łowcy Talent&oacute;w &ndash; JERSZ, Głogowa 22, 62-710 Władysław&oacute;w, zwany dalej &bdquo;Organizatorem&rdquo; lub &bdquo;JERSZ&rdquo;.<br />
+<br />
+Konkurs przeprowadzany jest na terenie zgłoszonych szk&oacute;ł.<br />
+<br />
+Konkurs ma charakter indywidualny.<br />
+<br />
+Za prawidłową organizację i przeprowadzenie konkursu na terenie szkoły odpowiada Szkolny Koordynator Konkursu.<br />
+<br />
+Zgłoszenia do konkursu oraz informacje dotyczące jego obsługi dostępne są w Panelu Nauczyciela JERSZ.<br />
+<br />
+&sect; 2. Uczestnicy<br />
+Konkurs przeznaczony jest dla:<br />
+<br />
+uczni&oacute;w klas 1&ndash;8 szk&oacute;ł podstawowych,<br />
+<br />
+uczni&oacute;w szk&oacute;ł ponadpodstawowych.<br />
+<br />
+Każdy uczestnik rozwiązuje test przygotowany dla swojej kategorii.<br />
+<br />
+&sect; 3. Termin i czas konkursu<br />
+Konkurs odbędzie się 19 listopada 2026 r.<br />
+<br />
+Konkurs rozpoczyna się o godzinie 9:00.<br />
+<br />
+Uczniowie szk&oacute;ł podstawowych mają 75 minut na rozwiązanie testu.<br />
+<br />
+Uczniowie szk&oacute;ł ponadpodstawowych mają 90 minut na rozwiązanie testu.<br />
+<br />
+Należy dodatkowo przewidzieć około 15 minut na czynności organizacyjne.<br />
+<br />
+&sect; 4. Zgłoszenie do konkursu<br />
+Zgłoszenia dokonywane są elektronicznie w Panelu Nauczyciela JERSZ.<br />
+<br />
+Termin zgłoszeń upływa 2 listopada 2026 r.<br />
+<br />
+Za prawidłowość danych przekazanych w zgłoszeniu odpowiada Szkolny Koordynator Konkursu.<br />
+<br />
+Organizator może przyjąć zgłoszenie po terminie, jeżeli pozwalają na to możliwości organizacyjne.<br />
+<br />
+Zgłoszenie przyjęte po terminie objęte jest standardową stawką 19 zł za każdego faktycznie uczestniczącego ucznia.<br />
+<br />
+&sect; 5. Materiały konkursowe i samodzielny wydruk<br />
+W przypadku zgłoszenia co najmniej 11 uczestnik&oacute;w szkoła może wybrać:<br />
+<br />
+materiały drukowane przygotowane i wysłane przez Organizatora albo<br />
+<br />
+wariant samodzielnego wydruku.<br />
+<br />
+W przypadku zgłoszenia mniej niż 11 uczestnik&oacute;w udział jest możliwy w wariancie samodzielnego wydruku.<br />
+<br />
+Z wariantu samodzielnego wydruku może skorzystać r&oacute;wnież szkoła zgłaszająca większą liczbę uczestnik&oacute;w.<br />
+<br />
+Organizator zachęca do korzystania z samodzielnego wydruku jako rozwiązania ekologicznego, ograniczającego przygotowywanie nadmiarowych materiał&oacute;w, pakowanie i transport.<br />
+<br />
+Materiały drukowane wysyłane przez Organizatora zostaną dostarczone do szkoły do 16 listopada 2026 r.<br />
+<br />
+Pliki przeznaczone do samodzielnego wydruku zostaną udostępnione w Panelu Nauczyciela w dniu konkursu &ndash; 19 listopada 2026 r. &ndash; przed jego rozpoczęciem.<br />
+<br />
+Koordynator odpowiada za pobranie, prawidłowe wydrukowanie odpowiedniej liczby materiał&oacute;w oraz zachowanie ich poufności.<br />
+<br />
+Materiały nie mogą zostać udostępnione uczestnikom ani osobom nieuprawnionym przed rozpoczęciem konkursu.<br />
+<br />
+Materiał&oacute;w nie wolno przed konkursem publikować ani rozpowszechniać.<br />
+<br />
+Wyb&oacute;r samodzielnego wydruku nie zmienia zasad, czasu ani sposobu oceniania konkursu.<br />
+<br />
+&sect; 6. Opłaty<br />
+Sugerowana wpłata uczestnika wynosi 19 zł.<br />
+<br />
+Przy faktycznym udziale do 11 os&oacute;b włącznie szkoła przekazuje Organizatorowi 19 zł za każdego uczestnika.<br />
+<br />
+Przy faktycznym udziale więcej niż 11 os&oacute;b szkoła przekazuje Organizatorowi 18 zł za każdego uczestnika, o ile liczba faktycznie startujących nie jest mniejsza od liczby zgłoszonych o więcej niż 10%.<br />
+<br />
+Jeżeli liczba faktycznie startujących jest mniejsza od liczby zgłoszonych o więcej niż 10%, obowiązuje standardowa stawka 19 zł za każdego faktycznie startującego uczestnika.<br />
+<br />
+Spadek liczby uczestnik&oacute;w o dokładnie 10% nie powoduje utraty obniżonej stawki, jeżeli liczba faktycznie uczestniczących nadal przekracza 11.<br />
+<br />
+Przy stawce 18 zł r&oacute;żnica pomiędzy sugerowaną wpłatą uczestnika a kwotą przekazywaną Organizatorowi może zostać przeznaczona przez szkołę na organizację konkursu lub nagrody szkolne.<br />
+<br />
+Samodzielny wydruk nie powoduje naliczenia dodatkowej opłaty.<br />
+<br />
+Termin płatności: 20 listopada 2026 r.<br />
+<br />
+Kod konkursu w tytule przelewu: AM.<br />
+<br />
+W tytule przelewu należy podać r&oacute;wnież nazwę szkoły.<br />
+<br />
+Wpłat należy dokonywać na rachunek:<br />
+<br />
+Santander Bank Polska<br />
+29 1090 2457 0000 0001 4154 5853<br />
+<br />
+Łowcy Talent&oacute;w &ndash; JERSZ<br />
+Głogowa 22<br />
+62-710 Władysław&oacute;w<br />
+<br />
+Faktura wystawiana jest na podstawie kompletnych danych przekazanych Organizatorowi.<br />
+<br />
+&sect; 7. Organizacja konkursu w szkole<br />
+Konkurs przeprowadza Szkolny Koordynator Konkursu lub osoby wyznaczone przez szkołę.<br />
+<br />
+Szkoła zapewnia warunki pozwalające uczestnikom na samodzielną pracę.<br />
+<br />
+Konkurs należy rozpocząć o godzinie określonej w regulaminie.<br />
+<br />
+Arkusze mogą zostać rozdane uczestnikom dopiero bezpośrednio przed rozpoczęciem pracy.<br />
+<br />
+Niedopuszczalne jest wcześniejsze zapoznawanie uczestnik&oacute;w z zadaniami.<br />
+<br />
+&sect; 8. Test i punktacja &ndash; szkoła podstawowa<br />
+Klasa 1 rozwiązuje 21 pytań:<br />
+<br />
+7 za 3 punkty,<br />
+<br />
+7 za 4 punkty,<br />
+<br />
+7 za 5 punkt&oacute;w.<br />
+<br />
+Klasa 2 rozwiązuje 24 pytania &ndash; po 8 za 3, 4 i 5 punkt&oacute;w.<br />
+<br />
+Klasa 3 rozwiązuje 27 pytań &ndash; po 9 za 3, 4 i 5 punkt&oacute;w.<br />
+<br />
+Klasy 4&ndash;8 rozwiązują 30 pytań &ndash; po 10 za 3, 4 i 5 punkt&oacute;w.<br />
+<br />
+W każdym pytaniu prawidłowa jest jedna odpowiedź.<br />
+<br />
+W klasie 1 odpowiedzi oznaczone są A&ndash;D, a w pozostałych kategoriach szkoły podstawowej A&ndash;E.<br />
+<br />
+Uczestnik rozpoczyna test z liczbą punkt&oacute;w odpowiadającą liczbie pytań w jego kategorii.<br />
+<br />
+Za prawidłową odpowiedź otrzymuje 3, 4 albo 5 punkt&oacute;w.<br />
+<br />
+Brak odpowiedzi nie powoduje zmiany wyniku.<br />
+<br />
+Za błędną odpowiedź odejmowana jest 1/4 wartości pytania.<br />
+<br />
+Uczniom klasy 1 można przeczytać instrukcję i udzielić pomocy technicznej przy wypełnianiu karty odpowiedzi. Pomoc nie może dotyczyć rozwiązania zadania.<br />
+<br />
+&sect; 9. Test i punktacja &ndash; szkoła ponadpodstawowa<br />
+Test zawiera 28 pytań.<br />
+<br />
+Każde pytanie zawiera cztery odpowiedzi A&ndash;D.<br />
+<br />
+Każda z odpowiedzi może być niezależnie prawdziwa albo fałszywa.<br />
+<br />
+Uczestnik rozpoczyna test ze 112 punktami.<br />
+<br />
+Za każdą prawidłową decyzję otrzymuje 1 punkt.<br />
+<br />
+Brak decyzji oznacza 0 punkt&oacute;w.<br />
+<br />
+Za błędną decyzję odejmowany jest 1 punkt.<br />
+<br />
+&sect; 10. Dozwolone i niedozwolone pomoce<br />
+Zabronione jest korzystanie z kalkulator&oacute;w, telefon&oacute;w, smartwatchy, Internetu, książek, podręcznik&oacute;w, notatek i innych niedozwolonych pomocy.<br />
+<br />
+Uczestnik może korzystać z czystej kartki papieru.<br />
+<br />
+W ALFIKU MATEMATYCZNYM dopuszczalny jest r&oacute;wnież czysty papier w kratkę.<br />
+<br />
+&sect; 11. Samodzielność pracy<br />
+Uczestnicy rozwiązują zadania samodzielnie.<br />
+<br />
+Niedopuszczalne jest podpowiadanie lub udzielanie pomocy merytorycznej.<br />
+<br />
+Organizator może zweryfikować prawidłowość przeprowadzenia konkursu, jeżeli wyniki lub inne okoliczności wskazują na możliwość naruszenia zasad.<br />
+<br />
+Organizator może w uzasadnionym przypadku przeprowadzić dodatkową weryfikację wiedzy uczestnika.<br />
+<br />
+W przypadku potwierdzenia poważnego naruszenia zasad Organizator może anulować wynik uczestnika, grupy uczestnik&oacute;w lub szkoły w zakresie, kt&oacute;rego dotyczyło naruszenie.<br />
+<br />
+&sect; 12. Wyniki<br />
+Wyniki zostaną udostępnione do 6 tygodni od dnia konkursu.<br />
+<br />
+Indywidualne wyniki udostępniane są uprawnionemu nauczycielowi w Panelu Nauczyciela.<br />
+<br />
+Organizator nie publikuje publicznych imiennych list wynik&oacute;w ani laureat&oacute;w.<br />
+<br />
+&sect; 13. Dyplomy i nagrody<br />
+Konkurs ma charakter samofinansujący się.<br />
+<br />
+Część wpływ&oacute;w z opłat przeznaczana jest na nagrody.<br />
+<br />
+Nagrody mogą obejmować nagrody rzeczowe, bony oraz nagrody związane z Letnim Obozem Talent&oacute;w.<br />
+<br />
+Uczniowie klas 2&ndash;8 szkoły podstawowej mogą otrzymywać nagrody związane z Letnim Obozem Talent&oacute;w.<br />
+<br />
+Uczniowie klasy 1 oraz uczniowie szk&oacute;ł ponadpodstawowych otrzymują nagrody rzeczowe lub inne nagrody materialne przewidziane przez Organizatora.<br />
+<br />
+Liczba i rodzaj nagr&oacute;d zależą między innymi od liczby uczestnik&oacute;w danej kategorii.<br />
+<br />
+W kategorii o niewielkiej liczbie uczestnik&oacute;w nagroda w postaci udziału w obozie może nie zostać przyznana.<br />
+<br />
+Organizator może w przypadkach określonych zasadami nagr&oacute;d zamienić nagrodę obozową na nagrodę rzeczową.<br />
+<br />
+Uczestnik uzyskujący wynik powyżej 80% możliwych punkt&oacute;w otrzymuje dyplom za bardzo dobry wynik.<br />
+<br />
+Uczestnik uzyskujący wynik powyżej 75% możliwych punkt&oacute;w otrzymuje dyplom za dobry wynik.<br />
+<br />
+Organizator może obniżyć progi dyplomowe, jeżeli uzasadnia to poziom trudności testu lub rozkład wynik&oacute;w.<br />
+<br />
+Pozostali uczestnicy mogą otrzymać dyplom uczestnictwa.<br />
+<br />
+&sect; 14. Reklamacje<br />
+Reklamacje można składać do 8 tygodni od dnia konkursu.<br />
+<br />
+Reklamacja powinna zawierać informacje pozwalające jednoznacznie zidentyfikować konkurs, szkołę, uczestnika oraz przedmiot reklamacji.<br />
+<br />
+Organizator może poprosić o uzupełnienie informacji niezbędnych do jej rozpatrzenia.<br />
+<br />
+Po zakończeniu okresu reklamacyjnego papierowe materiały konkursowe mogą zostać zniszczone, jeżeli nie istnieje obowiązek ich dalszego przechowywania.<br />
+<br />
+&sect; 15. Dane osobowe<br />
+Dane osobowe są przetwarzane zgodnie z aktualną Polityką Prywatności JERSZ.<br />
+<br />
+Polityka Prywatności dostępna jest na jersz.pl oraz w Panelu Nauczyciela.<br />
+<br />
+Zgoda na otrzymywanie informacji marketingowych jest dobrowolna i niezależna od udziału w konkursie.<br />
+<br />
+Brak zgody marketingowej nie ma wpływu na możliwość uczestnictwa.<br />
+<br />
+&sect; 16. Postanowienia końcowe<br />
+Zgłoszenie szkoły wiąże się z obowiązkiem przeprowadzenia konkursu zgodnie z niniejszym Regulaminem.<br />
+<br />
+Organizator może przekazywać koordynatorom dodatkowe instrukcje techniczne i organizacyjne poprzez Panel Nauczyciela, pocztę elektroniczną lub stronę jersz.pl.<br />
+<br />
+Instrukcje nie mogą być sprzeczne z Regulaminem.<br />
+<br />
+Organizator może zmienić Regulamin z ważnych przyczyn organizacyjnych, technicznych lub prawnych. Aktualna wersja jest publikowana przez Organizatora.<br />
+<br />
+Zmiany nie działają wstecz wobec czynności prawidłowo dokonanych według wcześniejszej wersji, chyba że wynikają z obowiązujących przepis&oacute;w lub są korzystne dla uczestnik&oacute;w.<br />
+<br />
+Kontakt: biuro@jersz.pl.<br />
+<br />
+Zapraszamy chętnych uczni&oacute;w do udziału w konkursie!<br />
+<br />
+Zesp&oacute;ł nauczycieli edukacji wczesnoszkolnej</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="2">&nbsp;</td>
+        </tr>
+    </tfoot>
+</table><table class="decorated big center printable margin-top">
+    <thead>
+        <tr>
+            <td colspan="2">Konkurs &quot;Wędr&oacute;wka z legendą przez Polskę &quot; dla kl. 3</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="line1">
+            <th class="medium">Dodał</th>
+            <td>Dorota Kwiatkowska</td>
+        </tr>
+        <tr class="line0">
+            <th>Data publikacji</th>
+            <td>2026-09-24</td>
+        </tr>
+        <tr class="line1">
+            <th>Treść</th>
+            <td>XIII EDYCJA KONKURSU DZIELNICOWEGO &bdquo;WĘDR&Oacute;WKA Z LEGENDĄ PRZEZ POLSKĘ&rdquo;  DLA UCZNI&Oacute;W KLAS III BIELAŃSKICH SZK&Oacute;Ł PODSTAWOWYCH<br />
+<br />
+Wydział Oświaty i Wychowania Dzielnicy Warszawa - Bielany oraz Szkoła Podstawowa <br />
+nr 293 zaprasza w roku szkolnym 2026/2027 uczni&oacute;w klas III bielańskich szk&oacute;ł podstawowych do udziału w XIII edycji konkursu wiedzy &bdquo;Wędr&oacute;wka z legendą przez Polskę&rdquo;.<br />
+<br />
+TERMINY<br />
+I etap /wewnątrzszkolny/ - zgłoszenia do 4 listopada 2026 r.<br />
+II etap w SP nr 293 &ndash; 20 listopada 2026 r.<br />
+<br />
+REGULAMIN KONKURSU<br />
+<br />
+1. Organizatorem XIII edycji Konkursu &bdquo;Wędr&oacute;wka z legendą przez Polskę&rdquo; jest Szkoła Podstawowa nr 293 im. Jana Kochanowskiego w Warszawie, ul. Kochanowskiego 8<br />
+2. Konkurs skierowany jest do uczni&oacute;w klas III bielańskich szk&oacute;ł podstawowych.<br />
+Laureaci otrzymają cenne nagrody.<br />
+<br />
+Cele konkursu:<br />
+-rozbudzanie motywacji czytania i rozwijania umiejętności odbioru dzieł literackich;<br />
+-propagowanie treści historycznych rozwijających poczucie przynależności do regionu i kraju;<br />
+-rozwijanie postawy patriotycznej związanej z tożsamością kultury regionalnej;<br />
+-poznanie specyfiki poszczeg&oacute;lnych krain geograficznych;<br />
+-popularyzacja wiedzy o Polsce, propagowanie wiedzy o kulturze narodu i państwa polskiego;<br />
+-popularyzacja literatury polskiej;<br />
+-rozwijanie umiejętności stosowania zdobytej wiedzy w praktyce;<br />
+-wdrażanie do wsp&oacute;łzawodnictwa i godnej rywalizacji.<br />
+<br />
+PRZEBIEG I ORGANIZACJA <br />
+Konkurs &bdquo;Wędr&oacute;wka z legendą przez Polskę&rdquo; jest dwuetapowy.<br />
+I etap - szkolny<br />
+Uczniowie indywidualnie przygotowują pracę plastyczną &bdquo;Ilustracja do wybranej legendy&rdquo; (format A3) &ndash; technika &ndash; farby. Każda ze szk&oacute;ł wysyła trzyosobową reprezentację klas III. Prace opatrzone na odwrocie imieniem i nazwiskiem ucznia, numerem szkoły oraz imieniem i nazwiskiem nauczyciela należy złożyć w dniu  26 października 2026 r.  w sali nr 12. Test ze znajomości treści legend zawartych w regulaminie konkursu odbędzie się 26 października 2026r. o godz. 8:00  w sali nr 12. <br />
+II etap &ndash; międzyszkolny &ndash; finał<br />
+<br />
+Uczniowie, kt&oacute;rzy zakwalifikowali się do finału wykonują indywidualnie zadania związana <br />
+z podanymi kryteriami.<br />
+Etap II odbędzie się w Szkole Podstawowej nr 293. <br />
+Termin &ndash; 20 listopada 2026 r. (piątek), godz. 9.00. <br />
+Ogłoszenie wynik&oacute;w nastąpi 4 grudnia 2026 r. o godz. 9.00.<br />
+<br />
+ZAKRES TEMATYCZNY KONKURSU <br />
+Zapoznanie z wybranymi legendami:<br />
+I i II etap konkursu:<br />
+<br />
+&bdquo;Skarbiec baśni i legend polskich&rdquo; &ndash; Marta Berowska i Magdalena Grądzka<br />
+<br />
+1.&bdquo;Szabla kr&oacute;la Zygmunta&rdquo;<br />
+2.&bdquo;Wieża Trzech płaszczy&rdquo;<br />
+3.&bdquo;Wars i Sawa&rdquo;<br />
+4.&bdquo;Syrena&rdquo;<br />
+5.&bdquo;Poznańskie koziołki&rdquo;<br />
+6.&bdquo;Kr&oacute;lowa Bałtyku&rdquo;<br />
+7.&bdquo;Największy skarb&rdquo;<br />
+<br />
+ &bdquo;Legendy polskie&rdquo; &ndash; Ewa Stadtm&uuml;ller<br />
+<br />
+1.&bdquo;O Lechu, Czechu i Rusie&rdquo;<br />
+2.&bdquo;O smoku wawelskim&rdquo;<br />
+3.&bdquo;O krakowskim hejnale&rdquo;<br />
+4.&bdquo;Wisła&rdquo;<br />
+5.&bdquo;Toruńskie pierniki&rdquo;<br />
+6.&bdquo;Lwy z gdańskiego ratusza&rdquo;<br />
+7.&bdquo;O śpiących rycerzach w Tatrach&rdquo;<br />
+8.&bdquo;O Podhalu&rdquo;<br />
+9.&bdquo;Dlaczego Bałtyk jest słony&rdquo;<br />
+<br />
+W razie trudności z dostępem do legend proszę o kontakt przez dziennik Librus. <br />
+<br />
+Zapraszamy chętnych uczni&oacute;w klas III do udziału w konkursie!<br />
+<br />
+Zesp&oacute;ł nauczycieli edukacji wczesnoszkolnej<br />
+</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="2">&nbsp;</td>
+        </tr>
+    </tfoot>
+</table><table class="decorated big center printable margin-top">
+    <thead>
+        <tr>
+            <td colspan="2">KONKURS PLASTYCZNE- ROK SZKOLNY 2026/2027</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="line1">
+            <th class="medium">Dodał</th>
+            <td>Ewelina Mazur</td>
+        </tr>
+        <tr class="line0">
+            <th>Data publikacji</th>
+            <td>2026-09-24</td>
+        </tr>
+        <tr class="line1">
+            <th>Treść</th>
+            <td>Szanowni Państwo, Uczniowie i Nauczyciele,<br />
+<br />
+informuję, że wszystkie informacje dotyczące konkurs&oacute;w organizowanych w roku szkolnym 2026/2027 będą na bieżąco zamieszczane na stronie Padlet. Na stronie, będą zamieszczane r&oacute;wnież załączniki- do wydruku, zgody do podpisania przez rodzica/opiekuna prawnego.<br />
+<br />
+Link:<br />
+https://padlet.com/egorka2/konkursy-plastyczne-s023r013fss13m5hp5h7<br />
+<br />
+Serdecznie zapraszam uczni&oacute;w do udziału w konkursach, rozwijania swoich zainteresowań, talent&oacute;w oraz podejmowania nowych wyzwań. Zachęcam r&oacute;wnież rodzic&oacute;w i nauczycieli do odwiedzania strony i śledzenia aktualnych informacji o organizowanych przedsięwzięciach.<br />
+<br />
+Prace konkursowe można dostarczać do nauczyciela- koordynatora, w każdą środę i czwartek.<br />
+<br />
+Zapraszam wszystkich do aktywnego udziału, tw&oacute;rczego działania i wsp&oacute;lnego odkrywania swoich pasji!<br />
+<br />
+Z wyrazami szacunku<br />
+ Koordynator konkurs&oacute;w / Nauczyciel organizujący konkursy<br />
+<br />
+</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="2">&nbsp;</td>
+        </tr>
+    </tfoot>
+</table><table class="decorated big center printable margin-top">
+    <thead>
+        <tr>
+            <td colspan="2">Og&oacute;lnopolski Dzień Głośnego Czytania</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="line1">
+            <th class="medium">Dodał</th>
+            <td>Wolontariat SP133</td>
+        </tr>
+        <tr class="line0">
+            <th>Data publikacji</th>
+            <td>2026-09-23</td>
+        </tr>
+        <tr class="line1">
+            <th>Treść</th>
+            <td>29 września obchodzimy w naszej szkole Og&oacute;lnopolski Dzień Głośnego Czytania &ndash; wyjątkowe święto, kt&oacute;re przypomina nam, jak wiele radości i korzyści może przynieść wsp&oacute;lne czytanie.<br />
+<br />
+Z tej okazji Szkolny Wolontariat przygotował dla uczni&oacute;w klas najmłodszych spotkanie z książką, podczas kt&oacute;rego starsi koledzy i koleżanki będą czytać im wybrane opowiadania i historie.<br />
+<br />
+Głośne czytanie to nie tylko przyjemny spos&oacute;b na spędzenie czasu. Rozwija wyobraźnię i kreatywność, wzbogaca słownictwo, poprawia koncentrację oraz pomaga lepiej rozumieć i zapamiętywać treści. Wsp&oacute;lne czytanie buduje r&oacute;wnież relacje, rozwija umiejętność słuchania i pozwala odkrywać przyjemność płynącą z kontaktu z książką.<br />
+<br />
+Dla młodszych uczni&oacute;w będzie to okazja do poznania ciekawych historii i spędzenia czasu w miłej atmosferze, natomiast dla starszych &ndash; możliwość rozwijania umiejętności czytania, prezentowania się przed innymi oraz podzielenia się swoją pasją do książek.<br />
+Zachęcamy szczeg&oacute;lnie uczni&oacute;w klas 4 do udziału w wydarzeniu. </td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="2">&nbsp;</td>
+        </tr>
+    </tfoot>
+</table><table class="decorated big center printable margin-top">
+    <thead>
+        <tr>
+            <td colspan="2">Og&oacute;lnopolski Konkurs Matematyczny Fenek dla klas 1-4 </td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="line1">
+            <th class="medium">Dodał</th>
+            <td>Dorota Kwiatkowska</td>
+        </tr>
+        <tr class="line0">
+            <th>Data publikacji</th>
+            <td>2026-09-20</td>
+        </tr>
+        <tr class="line1">
+            <th>Treść</th>
+            <td>Serdecznie zapraszamy chętnych uczni&oacute;w z klas 1-4 do udziału w Og&oacute;lnopolskim Konkursie Matematycznym Fenek.<br />
+<br />
+Konkurs odbędzie się 23 października 2026r. o godz. 9:00. Czas trwania konkursu 45 min + 10 min czynności organizacyjne.<br />
+<br />
+Opłata wpisowa za konkurs wynosi 16 zł.  Opłaty od chętnych uczni&oacute;w przyjmować będą wychowawcy klas I-III lub bezpośrednio koordynator konkursu do 30 września 2026r. <br />
+<br />
+Udział ucznia w konkursie możliwy jest wyłącznie po uzyskaniu zgody rodzica lub opiekuna prawnego. Treść zgody znajduje się pod linkiem, a podpisane zgody pozostają w szkole. <br />
+Zgodę w formie papierowej można otrzymać od koordynatora konkursu (sala nr 12)<br />
+<br />
+Regulamin konkursu:<br />
+1.Testy przygotowywane są w oparciu o obowiązujący program nauczania.<br />
+<br />
+2.Prawo do udziału w konkursie ma każdy uczeń klasy I-IV szkoły podstawowej, kt&oacute;ra zgłosi się do konkursu.<br />
+<br />
+3.Warunkiem przystąpienia szkoły do konkursu jest zgłoszenie minimum 10 uczestnik&oacute;w ze szkoły (mogą to być uczniowie z r&oacute;żnych klas).<br />
+<br />
+4.W dniu konkursu liczba uczestnik&oacute;w nie może być mniejsza o więcej niż 10% w stosunku do liczby podanej w zgłoszeniu. Nawet jeśli liczba ta jest mniejsza niż 90%, Organizator zwraca maksymalnie 10% dokonanej wpłaty z zastrzeżeniem minimalnej liczby 10 uczestnik&oacute;w. Na zgłoszenie zwrotu koordynatorzy konkursu mają 2 tygodnie od daty realizacji konkursu. Po tym terminie zwroty nie będą uwzględniane.<br />
+<br />
+5. Konkurs ma formę testu, składającego się z pytań zamkniętych. Do każdego pytania może być jedna, dwie lub kilka poprawnych odpowiedzi. Za każdą prawidłową odpowiedź uczestnicy otrzymują 1 punkt, jeżeli w pytaniu są poprawne dwie lub więcej odpowiedzi, a uczeń zaznaczył tylko jedną otrzymuje 1 punkt. W przypadku, gdy są prawidłowe 2 odpowiedzi a uczeń zaznaczy trzy lub więcej, otrzymuje 0 punkt&oacute;w, itd. Może się zdarzyć, że żadna z odpowiedzi nie jest prawidłowa, jeżeli w tej sytuacji uczeń nic nie zaznaczy wtedy otrzymuje jeden punkt, jeżeli zaznaczy jakąś odpowiedź otrzymuje 0 punkt&oacute;w.<br />
+<br />
+6.Jeżeli uczeń pomyli się przy zaznaczaniu odpowiedzi może przenieść odpowiedzi na nową kartę/test lub zaznaczyć w k&oacute;łeczko błędną odpowiedź. Maksymalna liczba k&oacute;łeczek na teście/karcie, to 3.<br />
+<br />
+7.Odpowiedzi zaznaczane są na testach. Prawidłową odpowiedź zaznaczamy krzyżykiem. Prosimy, aby uczniowie nie pisali po testach.<br />
+<br />
+8.W klasie I istnieje możliwość odczytywania przez nauczyciela poleceń zawartych w teście. Odczytywanie to jednak nie może mieć charakteru wskazywania uczniowi poprawnej odpowiedzi.<br />
+<br />
+9.Uczestnicy na konkurs przynoszą tylko czarny długopis. Uczeń po otrzymaniu testu wpisuje drukowanymi literami swoje imię nazwisko (bez zdrobnień), następnie zaznacza odpowiedzi na teście (organizator konkursu nie bierze odpowiedzialności za błędy w nazwiskach podanych w wynikach, kt&oacute;re wynikną z nieczytelnego podpisu ucznia na teście). Po ukończeniu pisania każdy uczeń wkłada test do przygotowanej koperty zbiorczej.<br />
+<br />
+10.Nagrody w konkursie przyznawane są na podstawie uzyskanej liczby punkt&oacute;w. Za zajęcie: Miejsca od I do III &ndash; dyplom laureata + nagroda książkowa Miejsca od IV do X &ndash; dyplom laureata Miejsca od XI &ndash; dyplom uczestnictwa Każde dziecko, kt&oacute;re wzięło udział w Og&oacute;lnopolskim Konkursie Przedmiotowym &bdquo;Fenek&rdquo; otrzyma dyplom uczestnictwa, niezależnie od uzyskanego wyniku. <br />
+<br />
+11.Rodzice i opiekunowie prawni niepełnoletnich uczestnik&oacute;w, w chwili uiszczenia opłaty za uczestnictwo w konkursie, wyrażają zgodę na przetwarzanie danych osobowych uczestnika na potrzeby realizacji konkursu.<br />
+<br />
+Regulamin konkursu znajduje się <br />
+https://fenek-konkursy.pl/regulamin/<br />
+<br />
+Przykładowe testy https://fenek-konkursy.pl/przykladowe-testy/<br />
+<br />
+Zapraszamy chętnych uczni&oacute;w do udziału w konkursie!<br />
+<br />
+Zesp&oacute;ł nauczycieli edukacji wczesnoszkolnej<br />
+</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="2">&nbsp;</td>
+        </tr>
+    </tfoot>
+</table><table class="decorated big center printable margin-top">
+    <thead>
+        <tr>
+            <td colspan="2">Warsztaty komputerowe z Seniorami Wolontariusze klas 4-8</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="line1">
+            <th class="medium">Dodał</th>
+            <td>Wolontariat SP133</td>
+        </tr>
+        <tr class="line0">
+            <th>Data publikacji</th>
+            <td>2026-09-19</td>
+        </tr>
+        <tr class="line1">
+            <th>Treść</th>
+            <td>DRODZY WOLONTARIUSZE! <br />
+<br />
+Serdecznie zapraszamy Was na wyjątkowe warsztaty komputerowe z seniorami z Ośrodka Wsparcia dla Senior&oacute;w nr 1.<br />
+<br />
+ Środa, 23 września<br />
+⏰ godz. 14:00&ndash;15:00<br />
+ sala nr 7<br />
+<br />
+Podczas wsp&oacute;lnego spotkania nie tylko spędzimy razem czas i lepiej się poznamy, ale przede wszystkim będziemy mogli pom&oacute;c seniorom w poznawaniu podstawowych umiejętności korzystania z komputera i poruszania się w świecie Internetu. <br />
+<br />
+To świetna okazja, aby podzielić się swoją wiedzą, wykazać się cierpliwością i zrobić coś dobrego dla drugiego człowieka. Czasami to, co dla nas jest bardzo proste, dla kogoś innego może być zupełnie nowym doświadczeniem. ❤️<br />
+<br />
+Chętnych wolontariuszy prosimy o zgłaszanie się poprzez wiadomość w Librusie.<br />
+<br />
+Do zobaczenia! <br />
+<br />
+Opiekunowie Szkolnego Koła Wolontariatu</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="2">&nbsp;</td>
+        </tr>
+    </tfoot>
+</table><table class="decorated big center printable margin-top">
+    <thead>
+        <tr>
+            <td colspan="2">EGZAMIN KARTA ROWEROWA UZUPEŁNIENIE</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="line1">
+            <th class="medium">Dodał</th>
+            <td>Iza Jankowska</td>
+        </tr>
+        <tr class="line0">
+            <th>Data publikacji</th>
+            <td>2026-09-15</td>
+        </tr>
+        <tr class="line1">
+            <th>Treść</th>
+            <td>Drodzy Rodzice, Uczniowie.<br />
+<br />
+W dniu 26 września 2026r. odbędzie się ostatni w tym roku kalendarzowym egzamin na kartę rowerową, organizowany przez Straż Miejską.<br />
+<br />
+Zapisy i informacje dostępne pod linkiem:<br />
+<br />
+https://strazmiejska.waw.pl/1083-miasteczko-ruchu-drogowego<br />
+<br />
+Iza Jankowska</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="2">&nbsp;</td>
+        </tr>
+    </tfoot>
+</table><table class="decorated big center printable margin-top">
+    <thead>
+        <tr>
+            <td colspan="2">Konkurs kuratoryjny z biologii</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="line1">
+            <th class="medium">Dodał</th>
+            <td>Iwona Kowalska</td>
+        </tr>
+        <tr class="line0">
+            <th>Data publikacji</th>
+            <td>2026-09-15</td>
+        </tr>
+        <tr class="line1">
+            <th>Treść</th>
+            <td>Drodzy Uczniowie <br />
+<br />
+26 października o 9:00 odbędzie się etap szkolny kuratoryjnego konkursu z biologii, wszystkich zainteresowanych zapraszam po więcej szczeg&oacute;ł&oacute;w do nauczycielki biologii<br />
+<br />
+Iwona Kowalska</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="2">&nbsp;</td>
+        </tr>
+    </tfoot>
+</table><table class="decorated big center printable margin-top">
+    <thead>
+        <tr>
+            <td colspan="2">Konkurs kuratoryjny z języka polskiego</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="line1">
+            <th class="medium">Dodał</th>
+            <td>Monika Kaczmarek</td>
+        </tr>
+        <tr class="line0">
+            <th>Data publikacji</th>
+            <td>2026-09-14</td>
+        </tr>
+        <tr class="line1">
+            <th>Treść</th>
+            <td>Drodzy Uczniowie!<br />
+<br />
+dnia 6 października (wtorek) o godzinie 9:00 odbędzie się etap szkolny kuratoryjnego konkursu z języka polskiego.<br />
+<br />
+Wszystkich zainteresowanych zapraszam, po więcej szczeg&oacute;ł&oacute;w oraz w celu dokonania zgłoszenia, do nauczycieli języka polskiego. <br />
+<br />
+Monika Kaczmarek</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="2">&nbsp;</td>
+        </tr>
+    </tfoot>
+</table><table class="decorated big center printable margin-top">
+    <thead>
+        <tr>
+            <td colspan="2">Łowcy Wspomnień- warsztaty dla wolontariuszy z klas 4-7</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="line1">
+            <th class="medium">Dodał</th>
+            <td>Wolontariat SP133</td>
+        </tr>
+        <tr class="line0">
+            <th>Data publikacji</th>
+            <td>2026-09-14</td>
+        </tr>
+        <tr class="line1">
+            <th>Treść</th>
+            <td>DRODZY WOLONTARIUSZE KLAS 4&ndash;7! <br />
+<br />
+Jeśli chcecie rozwijać swoje zdolności muzyczne, doskonalić śpiew, zdobywać nowe doświadczenia i jednocześnie stać się częścią wyjątkowego projektu społecznego &bdquo;Łowcy Wspomnień&rdquo; &ndash; serdecznie zapraszamy do udziału w warsztatach muzycznych z Seniorami! ❤️<br />
+<br />
+Poznacie piękne, dawne utwory, kt&oacute;re być może pamiętają Wasi rodzice i dziadkowie. To będzie wyjątkowe spotkanie muzyki, wspomnień i dw&oacute;ch pokoleń.<br />
+<br />
+ Warsztaty prowadzi Robert Lipka &ndash; muzyk, kt&oacute;ry pomoże Wam rozwijać umiejętności wokalne i przygotować wyjątkowy wsp&oacute;lny występ.<br />
+<br />
+ WARSZTATY MUZYCZNE<br />
+<br />
+We wtorki wraz z Opiekunami Szkolnego Koła Wolontariatu udajemy się na warsztaty, kt&oacute;re rozpoczynają się o godz. 14:30 przy ul. Broniewskiego 56.<br />
+<br />
+15.09<br />
+29.09<br />
+13.10<br />
+27.10<br />
+10.11<br />
+<br />
+17.11 &ndash; WIELKI FINAŁ &ndash; godz. 14:00<br />
+Sala widowiskowa Dzielnicy Bielany<br />
+<br />
+Podczas warsztat&oacute;w będziecie mieli okazję:<br />
+<br />
+✨ rozwijać swoje umiejętności wokalne,<br />
+✨ poznać piękne i ponadczasowe utwory,<br />
+✨ uczyć się wsp&oacute;łpracy i działania w grupie,<br />
+✨ nawiązywać relacje z Seniorami,<br />
+✨ zdobywać nowe doświadczenia,<br />
+✨ przygotować wyjątkowy wsp&oacute;lny występ,<br />
+✨ a przede wszystkim stworzyć coś, co stanie się pięknym wspomnieniem dla Was i dla naszych Senior&oacute;w. ❤️<br />
+<br />
+ WARSZTATY PLASTYCZNE<br />
+<br />
+Zapraszamy r&oacute;wnież na warsztaty plastyczne, kt&oacute;re odbędą się w naszej szkole:<br />
+<br />
+22.10 &ndash; godz. 14:30<br />
+29.10 &ndash; godz. 14:30<br />
+<br />
+Jeśli lubicie rysować, malować, tworzyć i macie głowę pełną pomysł&oacute;w &ndash; te warsztaty są właśnie dla Was! <br />
+<br />
+DOŁĄCZCIE DO &bdquo;ŁOWC&Oacute;W WSPOMNIEŃ&rdquo;!<br />
+<br />
+Razem z Seniorami możemy stworzyć coś naprawdę wyjątkowego &ndash; połączyć pokolenia, podzielić się talentami, odkryć piękno dawnych piosenek i stworzyć wspomnienia, kt&oacute;re zostaną z nami na długo. <br />
+<br />
+Osoby zainteresowane udziałem prosimy o kontakt przez Librus z Opiekunami Szkolnego Koła Wolontariatu.<br />
+<br />
+Serdecznie zapraszamy!<br />
+Opiekunowie Szkolnego Koła Wolontariatu</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="2">&nbsp;</td>
+        </tr>
+    </tfoot>
+</table><table class="decorated big center printable margin-top">
+    <thead>
+        <tr>
+            <td colspan="2">Apel klas 1-3- &quot;Lżejszy tornister&quot;</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="line1">
+            <th class="medium">Dodał</th>
+            <td>Dorota Kwiatkowska</td>
+        </tr>
+        <tr class="line0">
+            <th>Data publikacji</th>
+            <td>2026-09-10</td>
+        </tr>
+        <tr class="line1">
+            <th>Treść</th>
+            <td>17 września 2026r. o godz. 9:00  zapraszamy uczni&oacute;w klas I&ndash;III na apel, podczas kt&oacute;rego porozmawiamy o zasadach prawidłowego i bezpiecznego noszenia tornistra.<br />
+<br />
+W ramach spotkania zważymy tornistry naszych pierwszoklasist&oacute;w i wsp&oacute;lnie sprawdzimy, czy ich zawartość nie jest zbyt ciężka. <br />
+Porozmawiamy r&oacute;wnież o tym, co warto nosić w tornistrze, a co można zostawić w domu lub w szkole.<br />
+<br />
+Celem akcji jest przede wszystkim kształtowanie prawidłowych nawyk&oacute;w oraz troska o zdrowie i komfort naszych najmłodszych uczni&oacute;w.<br />
+<br />
+Prosimy, aby tego dnia dzieci przyniosły do szkoły swoje codzienne tornistry wraz z ich zwykłą zawartością.<br />
+<br />
+Spotykamy się na holu II piętra o godz. 8:55.<br />
+<br />
+Opiekunowie Samorządu klas 1-3<br />
+Dorota Kwiatkowska i Joanna Majewska</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="2">&nbsp;</td>
+        </tr>
+    </tfoot>
+</table><table class="decorated big center printable margin-top">
+    <thead>
+        <tr>
+            <td colspan="2">Międzynarodowy Dzień Kropki w kl. 1-3</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="line1">
+            <th class="medium">Dodał</th>
+            <td>Dorota Kwiatkowska</td>
+        </tr>
+        <tr class="line0">
+            <th>Data publikacji</th>
+            <td>2026-09-10</td>
+        </tr>
+        <tr class="line1">
+            <th>Treść</th>
+            <td>15 września 2026r. w naszej szkole będziemy obchodzić Międzynarodowy Dzień Kropki &ndash; święto kreatywności, odwagi i odkrywania własnych talent&oacute;w. <br />
+<br />
+Tego dnia uczniowie klas 1&ndash;3 wezmą udział w ciekawych zabawach i aktywnościach, podczas kt&oacute;rych będą rozwijać swoją wyobraźnię, poznawać swoje mocne strony oraz przekonywać się, że każdy z nas ma wyjątkowe talenty i możliwości.<br />
+<br />
+Zachęcamy, aby dzieci tego dnia założyły ubrania w kropki, groszki lub inne elementy z motywem kropek.<br />
+<br />
+Liczymy na Waszą kreatywność! Niech tego dnia w naszej szkole zrobi się kolorowo, radośnie i&hellip; kropkowo! <br />
+<br />
+Dziękujemy za zaangażowanie i wsp&oacute;lną zabawę! <br />
+<br />
+Opiekunowie Samorządu kl. I-III<br />
+Dorota Kwiatkowska i Joanna Majewska<br />
+</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="2">&nbsp;</td>
+        </tr>
+    </tfoot>
+</table><table class="decorated big center printable margin-top">
+    <thead>
+        <tr>
+            <td colspan="2">Talenciaki</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="line1">
+            <th class="medium">Dodał</th>
+            <td>Wolontariat SP133</td>
+        </tr>
+        <tr class="line0">
+            <th>Data publikacji</th>
+            <td>2026-09-04</td>
+        </tr>
+        <tr class="line1">
+            <th>Treść</th>
+            <td>Szanowni Państwo, Drodzy Uczniowie,<br />
+<br />
+miło nam poinformować, że nasza szkoła po raz kolejny uczestniczy w akcji Szkoły Pełne Talent&oacute;w. Jest to inicjatywa, dzięki kt&oacute;rej wsp&oacute;lnym wysiłkiem możemy pozyskać dla szkoły wartościowe i atrakcyjne wyposażenie, kt&oacute;re będzie służyło naszym uczniom.<br />
+<br />
+Zachęcamy wszystkich uczni&oacute;w, rodzic&oacute;w, nauczycieli oraz sympatyk&oacute;w naszej szkoły do aktywnego udziału w zbi&oacute;rce Talenciak&oacute;w.<br />
+<br />
+Jak przekazać Talenciaki?<br />
+Talenciaki można wrzucać do specjalnie przygotowanych skrzynek znajdujących się w naszej szkole.<br />
+Można r&oacute;wnież samodzielnie zeskanować kod z Talenciaka i przypisać go bezpośrednio do naszej szkoły.<br />
+<br />
+Zbi&oacute;rka trwa do 15 listopada 2026 r.<br />
+<br />
+Każdy Talenciak ma znaczenie - nawet niewielkie zaangażowanie wielu os&oacute;b może przełożyć się na dużą liczbę zebranych punkt&oacute;w, a tym samym na atrakcyjne wyposażenie dla naszej szkoły.<br />
+<br />
+Liczymy na Państwa wsparcie i zachęcamy do włączenia się w akcję. Razem możemy sprawić, że nasza szkoła będzie jeszcze lepiej wyposażona i jeszcze bardziej przyjazna dla uczni&oacute;w!<br />
+<br />
+Dziękujemy za każdy przekazany Talenciak i za wsp&oacute;lne zaangażowanie w akcję Szkoły Pełne Talent&oacute;w!<br />
+</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="2">&nbsp;</td>
+        </tr>
+    </tfoot>
+</table><table class="decorated big center printable margin-top">
+    <thead>
+        <tr>
+            <td colspan="2">Wyniki konkursu Kangur Matematyczny dla kl. 2-8</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="line1">
+            <th class="medium">Dodał</th>
+            <td>Katarzyna Krawczyk</td>
+        </tr>
+        <tr class="line0">
+            <th>Data publikacji</th>
+            <td>2026-05-08</td>
+        </tr>
+        <tr class="line1">
+            <th>Treść</th>
+            <td>Z ogromną radością i dumą składamy gratulacje wszystkim uczniom, kt&oacute;rzy zostali wyr&oacute;żnieni w tegorocznej edycji Międzynarodowego Konkursu Matematycznego Kangur:<br />
+<br />
+W kategorii Żaczek klasy 2        <br />
+KATARZYNA CHUDOBIŃSKA  - wyr&oacute;żniona<br />
+<br />
+W kategorii Maluch klasy 3        <br />
+WOJCIECH SZUPILUK  - wynik bardzo dobry<br />
+CZESŁAW PARTYKA  - wyr&oacute;żniony<br />
+<br />
+W kategorii Maluch klasy 4        <br />
+WANDA MIELCZAREK - wyr&oacute;żniona<br />
+JAN GALEWSKI - wyr&oacute;żniony<br />
+STANISŁAW PARYSZ - wyr&oacute;żniony<br />
+<br />
+W kategorii Beniamin klasy 5      <br />
+FRANCISZEK SZUPILUK - wyr&oacute;żniony<br />
+<br />
+Dziękujemy wszystkim uczniom, kt&oacute;rzy wzięli udział w konkursie. Życzymy dalszych sukces&oacute;w, rozwijania swoich talent&oacute;w i wielu satysfakcji z odkrywania świata matematyki!<br />
+<br />
+Zesp&oacute;ł nauczycieli matematyki</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="2">&nbsp;</td>
+        </tr>
+    </tfoot>
+</table><table class="decorated big center printable margin-top">
+    <thead>
+        <tr>
+            <td colspan="2">INFORMACJA O EGZAMINACH NA KARTĘ ROWEROWĄ  poza szkołą</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="line1">
+            <th class="medium">Dodał</th>
+            <td>Iza Jankowska</td>
+        </tr>
+        <tr class="line0">
+            <th>Data publikacji</th>
+            <td>2026-04-19</td>
+        </tr>
+        <tr class="line1">
+            <th>Treść</th>
+            <td>25 kwietnia 2026 r. (sobota) podczas pikniku Straży Miejskiej &bdquo;Zdrowo Rowerowo&rdquo; - będą przeprowadzone egzaminy na kartę rowerową. Są one przeznaczone wyłącznie dla uczni&oacute;w szk&oacute;ł podstawowych, kt&oacute;rzy ukończyli 10 lat i nie zdają egzaminu w swojej szkole. <br />
+<br />
+Przed przystąpieniem do egzaminu należy uzgodnić udział w nim z dyrektorem szkoły, do kt&oacute;rej uczęszcza dziecko. Dyrektor szkoły, do kt&oacute;rej uczęszcza dziecko wyraża zgodę na udział ucznia w egzaminie - pisemnie.<br />
+<br />
+Osoba biorąca udział w egzaminie musi być w towarzystwie dorosłego opiekuna. Uczestnik musi mieć przy sobie:<br />
+<br />
+- legitymację szkolną lub dokument ze zdjęciem;<br />
+<br />
+- zgodę opiekuna prawnego na arkuszu zaliczeń &ndash; do pobrania pod tym linkiem:<br />
+<br />
+https://drogimazowsza.org/wp-content/uploads/2025/04/arkusz_MEN-VI_28_rower.pdf<br />
+<br />
+Egzaminy: teoretyczny i praktyczny* będą odbywały się w trzech turach o 12:00, 13:00 i 14:00.<br />
+<br />
+Należy przybyć 15 minut wcześniej i zgłosić chęć przystąpienia do egzaminu funkcjonariuszom policji pracującym na stanowisku egzaminacyjnym.<br />
+<br />
+* istnieje też możliwość przystąpienia wyłącznie do egzaminu praktycznego, pod warunkiem dostarczenia zaświadczenia o zdaniu egzaminu teoretycznego, podpisanego przez dyrektora szkoły<br />
+<br />
+Kartę rowerową wydaje dyrektor szkoły, do kt&oacute;rej dziecko uczęszcza, na podstawie dostarczonego arkusza zaliczeń, kt&oacute;ry zostanie uzupełniony przez egzaminujących.<br />
+<br />
+= = = = = = = = =<br />
+<br />
+Na terenie Miasteczka obowiązują przepisy Prawa o Ruchu Drogowym. Uczestnicy muszą stosować się do umieszczonych tam znak&oacute;w i sygnał&oacute;w drogowych, og&oacute;lnych zasad i przepis&oacute;w ruchu drogowego oraz poleceń strażnika miejskiego.<br />
+Przed wejściem na teren Miasteczka należy zapoznać się z regulaminem.<br />
+<br />
+REGULAMIN KORZYSTANIA Z INFRASTRUKTURY STACJONARNEGO MIASTECZKA RUCHU DROGOWEGO STRAŻY MIEJSKIEJ M.ST. WARSZAWY <br />
+<br />
+https://www.strazmiejska.waw.pl/1083-miasteczko-ruchu-drogowego<br />
+<br />
+Więcej informacji w sali nr 1 u nauczyciela techniki Izy Szczęsnej.</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="2">&nbsp;</td>
+        </tr>
+    </tfoot>
+</table><table class="decorated big center printable margin-top">
+    <thead>
+        <tr>
+            <td colspan="2">MIASTECZKO RUCHU DROGOWEGO</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="line1">
+            <th class="medium">Dodał</th>
+            <td>Iza Jankowska</td>
+        </tr>
+        <tr class="line0">
+            <th>Data publikacji</th>
+            <td>2026-04-19</td>
+        </tr>
+        <tr class="line1">
+            <th>Treść</th>
+            <td>Straż Miejska m.st. Warszawy zaprasza do bezpłatnego korzystania z infrastruktury Stacjonarnego Miasteczka Ruchu Drogowego, kt&oacute;re znajduje się na terenie IV Oddziału Terenowego Straży Miejskiej m.st. Warszawy przy ul. Sołtyka 8 / 10.<br />
+<br />
+Miasteczko czynne jest w okresie kwiecień &ndash; październik. Mogą z niego korzystać grupy zorganizowane oraz osoby indywidualne. <br />
+<br />
+Użytkownicy indywidualni mogą korzystać z Miasteczka w czasie dni otwartych, kt&oacute;rych harmonogram zamieszczany jest w okresie działania Miasteczka, czyli od 1 kwietnia do 31 października.<br />
+<br />
+Harmonogram dni otwartych MRD<br />
+<br />
+Kwiecień 2026<br />
+11.04.-12.04.- godz. 10.00-17.00<br />
+18.04.-19.04.- godz. 10.00-17.00<br />
+25.04.- Piknik &bdquo;Zdrowo rowerowo&rdquo; godz. 11.00-15.00<br />
+26.04.- godz. 10.00-17.00<br />
+<br />
+ UWAGA!<br />
+Informacja o terminach korzystania z Miasteczka Ruchu Drogowego przez osoby indywidualne będą umieszczane na bieżąco od kwietnia (do 25 dnia każdego miesiąca funkcjonowania Miasteczka). <br />
+Podczas dni otwartych nie obowiązują wcześniejsze zapisy.</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="2">&nbsp;</td>
+        </tr>
+    </tfoot>
+</table><table class="decorated big center printable margin-top">
+    <thead>
+        <tr>
+            <td colspan="2">wyniki konkursu przedmiotowego z matematyki</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="line1">
+            <th class="medium">Dodał</th>
+            <td>Agnieszka Zielińska</td>
+        </tr>
+        <tr class="line0">
+            <th>Data publikacji</th>
+            <td>2026-04-16</td>
+        </tr>
+        <tr class="line1">
+            <th>Treść</th>
+            <td>Adam Owczarczyk uczeń klasy 8a został finalistą konkursu przedmiotowego z matematyki w roku szkolnym 2025/2026, co stanowi znaczące osiągnięcie oraz dow&oacute;d jego wysokich umiejętności i zaangażowania w naukę.<br />
+<br />
+Jest to ogromny sukces ucznia, świadczący o jego systematycznej pracy, wytrwałości oraz szczeg&oacute;lnych uzdolnieniach matematycznych. Osiągnięcie to zasługuje na uznanie i stanowi pow&oacute;d do dumy zar&oacute;wno dla szkoły, jak i nauczycieli.<br />
+<br />
+Serdecznie gratulujemy i życzymy dalszych sukces&oacute;w.</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="2">&nbsp;</td>
+        </tr>
+    </tfoot>
+</table><table class="decorated big center printable margin-top">
+    <thead>
+        <tr>
+            <td colspan="2">Międzynarodowy Konkurs &bdquo;Kangur Matematyczny&rdquo; dla klas 2 &ndash; 8</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="line1">
+            <th class="medium">Dodał</th>
+            <td>Katarzyna Krawczyk</td>
+        </tr>
+        <tr class="line0">
+            <th>Data publikacji</th>
+            <td>2026-03-16</td>
+        </tr>
+        <tr class="line1">
+            <th>Treść</th>
+            <td>Szanowni Państwo, Drodzy Uczniowie,<br />
+przypominamy, że konkurs Kangur Matematyczny odbędzie się w czwartek 19 marca 2026r. o godz. 9.<br />
+<br />
+Zapraszamy zapisanych uczni&oacute;w:<br />
+Klasy 2d,2j (p. Dorota Kwiatkowska) do sali nr 12<br />
+Klasy 2s,3a,3j,3o (p. Katarzyna Wojciechowska) do sali nr 13<br />
+Klasy 4-8 (p. Katarzyna Krawczyk) do sali nr 10.<br />
+<br />
+Przynosimy czarny lub niebieski długopis.<br />
+<br />
+Koordynator konkursu Katarzyna Krawczyk</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="2">&nbsp;</td>
+        </tr>
+    </tfoot>
+</table><table class="decorated big center printable margin-top">
+    <thead>
+        <tr>
+            <td colspan="2">Wyniki I etapu Konkursu Matematycznego &bdquo;S&oacute;wka Łamigł&oacute;wka&rdquo; dla klas 4-6</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="line1">
+            <th class="medium">Dodał</th>
+            <td>Katarzyna Krawczyk</td>
+        </tr>
+        <tr class="line0">
+            <th>Data publikacji</th>
+            <td>2026-02-19</td>
+        </tr>
+        <tr class="line1">
+            <th>Treść</th>
+            <td>Z przyjemnością informujemy, że do II etapu Konkursu Matematycznego &bdquo;S&oacute;wka Łamigł&oacute;wka&rdquo;  zakwalifikowali się uczniowie:<br />
+1. Antoni Sawicki 4m<br />
+2. Stanisław Parysz 4a<br />
+<br />
+Drugi etap konkursu odbędzie się 11 marca 2026 r. o godzinie 10:00 w Szkole Podstawowej nr 369, ul. Przybyszewskiego 45 w Warszawie. <br />
+<br />
+Gratulujemy i życzymy powodzenia w II etapie!<br />
+Nauczyciele matematyki</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="2">&nbsp;</td>
+        </tr>
+    </tfoot>
+</table><table class="decorated big center printable margin-top">
+    <thead>
+        <tr>
+            <td colspan="2">Konkurs Matematyczny &bdquo;S&oacute;wka Łamigł&oacute;wka&rdquo; dla klas 4-6</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="line1">
+            <th class="medium">Dodał</th>
+            <td>Katarzyna Krawczyk</td>
+        </tr>
+        <tr class="line0">
+            <th>Data publikacji</th>
+            <td>2026-02-06</td>
+        </tr>
+        <tr class="line1">
+            <th>Treść</th>
+            <td>Konkurs Matematyczny &bdquo;S&oacute;wka Łamigł&oacute;wka&rdquo;  dla uczni&oacute;w klas 4-6, kt&oacute;rzy zapisali się w wyznaczonym terminie, odbędzie się 11 lutego 2026 r. (środa)  w godz. 9:40 &ndash; 10:50, w sali TP-1.<br />
+<br />
+Przypominamy, że uczestnik konkursu nie może używać kalkulatora, korektora. Praca nie może być r&oacute;wnież pisana oł&oacute;wkiem i długopisem ścieralnym. <br />
+<br />
+Zapraszamy i życzymy wysokich wynik&oacute;w.<br />
+Nauczyciele matematyki</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="2">&nbsp;</td>
+        </tr>
+    </tfoot>
+</table><table class="decorated big center printable margin-top">
+    <thead>
+        <tr>
+            <td colspan="2">konkurs przedmiotowy z matematyki</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="line1">
+            <th class="medium">Dodał</th>
+            <td>Agnieszka Zielińska</td>
+        </tr>
+        <tr class="line0">
+            <th>Data publikacji</th>
+            <td>2026-01-26</td>
+        </tr>
+        <tr class="line1">
+            <th>Treść</th>
+            <td>Z radością informujemy, że uczeń klasy 8a Adam Owczarczyk zakwalifikował się do etapu wojew&oacute;dzkiego konkursu matematycznego. Jest to ogromne osiągnięcie, będące efektem ciężkiej pracy, wiedzy oraz matematycznej pasji. Serdecznie gratulujemy i życzymy powodzenia oraz dalszych sukces&oacute;w na kolejnym etapie konkursu już 9marca.<br />
+<br />
+Zesp&oacute;ł nauczycielek matematyki</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="2">&nbsp;</td>
+        </tr>
+    </tfoot>
+</table><table class="decorated big center printable margin-top">
+    <thead>
+        <tr>
+            <td colspan="2">Dzielnicowy Konkurs Matematyczny &quot;S&oacute;wka-Łamigł&oacute;wka&quot; dla uczni&oacute;w klas 4-6</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="line1">
+            <th class="medium">Dodał</th>
+            <td>Katarzyna Krawczyk</td>
+        </tr>
+        <tr class="line0">
+            <th>Data publikacji</th>
+            <td>2026-01-11</td>
+        </tr>
+        <tr class="line1">
+            <th>Treść</th>
+            <td>Serdecznie zapraszamy do wzięcia udziału w Konkursie Matematycznym &bdquo;S&oacute;wka-Łamigł&oacute;wka&rdquo;. <br />
+Wydarzenie kierowane jest do uczni&oacute;w klas 4 - 6 bielańskich szk&oacute;ł podstawowych.<br />
+Etap I przeprowadzony zostanie 11.02.2026 r. na terenie macierzystej szkoły.<br />
+Czas pracy uczestnik&oacute;w w I etapie wynosi 60 minut. Do rozwiązania uczniowie otrzymają 10 zadań zamkniętych (testowych).<br />
+ <br />
+Regulamin oraz harmonogram znajdują się na stronie internetowej Szkoły Podstawowej nr 369, link poniżej: <br />
+https://sp369.edupage.org/a/informacje-o-konkursach-1?eqa=YmlkPWJsb2c0JndpZD1ibG9nNF9CbG9nXzEmYWlkX2Jsb2c0X0Jsb2dfMT0xMg%3D%3D<br />
+<br />
+Uczniowie chętni do wzięcia udziału w konkursie są proszeni o dostarczenie wypełnionych załącznik&oacute;w:<br />
+Załącznik nr  2 - zgoda rodzica/opiekuna<br />
+Załącznik nr 3 &ndash; klauzula informacyjna<br />
+nauczycielowi matematyki do dnia 16 stycznia 2026 r.<br />
+Ponadto uczniowie razem z nauczycielem matematyki muszą wypełnić załącznik nr 1 &ndash; karta zgłoszenia.<br />
+Zachęcamy do uczestnictwa w konkursie!<br />
+Nauczyciele matematyki<br />
+</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="2">&nbsp;</td>
+        </tr>
+    </tfoot>
+</table><table class="decorated big center printable margin-top">
+    <thead>
+        <tr>
+            <td colspan="2">konkurs kuratoryjny z matematyki</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="line1">
+            <th class="medium">Dodał</th>
+            <td>Agnieszka Zielińska</td>
+        </tr>
+        <tr class="line0">
+            <th>Data publikacji</th>
+            <td>2025-10-08</td>
+        </tr>
+        <tr class="line1">
+            <th>Treść</th>
+            <td>W poniedziałek 13 października o 9.00 na stoł&oacute;wce odbędzie się konkurs kuratoryjny z matematyki.<br />
+<br />
+Zapisanych uczni&oacute;w zapraszamy najp&oacute;źniej o godzinie 8.50 na zbi&oacute;rkę - parter przed stoł&oacute;wką.<br />
+<br />
+Zapraszamy i życzymy powodzenia!<br />
+ </td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="2">&nbsp;</td>
+        </tr>
+    </tfoot>
+</table><table class="decorated big center printable margin-top">
+    <thead>
+        <tr>
+            <td colspan="2">INDEKS KULTURALNY - IQ</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="line1">
+            <th class="medium">Dodał</th>
+            <td>Danuta Piotrowska</td>
+        </tr>
+        <tr class="line0">
+            <th>Data publikacji</th>
+            <td>2025-09-06</td>
+        </tr>
+        <tr class="line1">
+            <th>Treść</th>
+            <td>Drodzy Uczniowie, Szanowni Rodzice,<br />
+<br />
+Z przyjemnością informuję, że w roku szkolnym 2025/2026 kontynuujemy w naszej szkole prowadzenie Indeksu Kulturalnego &ndash; IQ dla uczni&oacute;w klas I&ndash;VIII.<br />
+<br />
+Jest to inicjatywa Biura Edukacji oraz Pełnomocnika Prezydenta ds. Edukacji Kulturalnej, mająca na celu dokumentowanie i walidację pozaszkolnych osiągnięć uczni&oacute;w w zakresie edukacji kulturalnej.<br />
+<br />
+Zależy nam, aby udział uczni&oacute;w w warsztatach, wystawach, wykładach i innych wydarzeniach rozwijających wiedzę, zainteresowania oraz umiejętności artystyczne był odpowiednio doceniany i potwierdzany &ndash; jako forma zdobywania kompetencji także poza szkołą.<br />
+<br />
+Wielu uczni&oacute;w naszej szkoły rozwija swoje pasje artystyczne w domach kultury, fundacjach, stowarzyszeniach, a także angażuje się w działalność wolontariacką.<br />
+Dzięki Indeksowi Kulturalnemu uczniowie mogą gromadzić potwierdzenia swojej aktywności w formie pieczątek i wpis&oacute;w, stanowiących dow&oacute;d ich zaangażowania.<br />
+<br />
+Wpisy w indeksie mogą być brane pod uwagę przy:<br />
+&ndash; wystawianiu ocen z przedmiot&oacute;w artystycznych,<br />
+&ndash; ocenianiu zachowania,<br />
+&ndash; przyznawaniu nagr&oacute;d szkolnych dla najbardziej aktywnych.<br />
+<br />
+Docenienie pozaszkolnej aktywności uczni&oacute;w jest istotnym elementem wspierania ich rozwoju &ndash; zwłaszcza w sytuacjach, gdy szkoła korzysta z ich zaangażowania, nie zawsze mając pełną świadomość nakładu pracy wkładanego poza jej murami.<br />
+<br />
+Proszę, aby uczniowie zainteresowani prowadzeniem Indeksu Kulturalnego zgłosili ten fakt swoim wychowawcom. <br />
+Wychowawc&oacute;w natomiast poproszę o przekazanie nazwisk zainteresowanych uczni&oacute;w do Szkolnego Koordynatora Edukacji Kulturalnej.<br />
+<br />
+UWAGA:<br />
+Uczniowie posiadający indeks z ubiegłego roku mogą kontynuować wpisy w dotychczasowym egzemplarzu r&oacute;wnież w roku szkolnym 2025/2026.<br />
+<br />
+Życząc owocnego rozwoju w r&oacute;żnych dziedzinach kultury,<br />
+serdecznie pozdrawiam,<br />
+Danuta Piotrowska<br />
+/Koordynator Edukacji Kulturalnej/</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="2">&nbsp;</td>
+        </tr>
+    </tfoot>
+</table></div>
+            </div>
+                </div>
+<script type="text/javascript">
+    $(document).ready(function(){
+        if( $('#body.have-interface').find(".container.static").length > 0 ) {
+            $('#body').css("padding-left", $('#body').css("padding-right") );
+        }
+        $('#body.have-interface').removeClass("have-interface");
+      });
+  </script>
+        <script type="text/javascript" src="/js/cookieBox.js"></script>
+    <div id="cookieBox" class="cookieBox" style="display: none;">
+        <div id="cookieBoxClose" class="cookieBoxClose"><a href="javascript: void(null);">x</a></div>
+        <p>
+            Ta strona wykorzystuje pliki cookies. Za ich pomocą zbierane są informacje, które mogą stanowić dane osobowe. Wykorzystujemy je m.in. w celach statystycznych i funkcjonalnych. Korzystając z serwisu bez zmiany konfiguracji przeglądarki, wyrażasz zgodę na zapisanie plików cookies w pamięci Twojego urządzenia. Możesz samodzielnie zarządzać cookies zmieniając odpowiednio ustawienia w Twojej przeglądarce. Więcej informacji o zasadach przetwarzania Twoich danych osobowych oraz przysługujących Ci prawach znajdziesz w <a href="https://synergia.librus.pl/polityka-prywatnosci/" target="_blank" rel="noreferrer noopener">Polityce prywatności</a>.
+        </p>
+    </div>
+        <div id="footer">
+              <hr></hr>
+                <span id="bottom-logo"></span>
+                </div>
+  </div>
+</body>
+</html>
+  
