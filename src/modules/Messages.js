@@ -42,10 +42,12 @@ export class Messages {
     }
 
     let url = 'https://synergia.librus.pl/wiadomosci';
-    if (folderId === 2) {
-      url = 'https://synergia.librus.pl/wiadomosci/2';
-    } else if (folderId === 3) {
-      url = 'https://synergia.librus.pl/wiadomosci/3';
+    if (folderId === 2 || folderId === 6) {
+      url = 'https://synergia.librus.pl/wiadomosci/6';
+    } else if (folderId === 3 || folderId === 7) {
+      url = 'https://synergia.librus.pl/wiadomosci/7';
+    } else if (folderId === 1 || folderId === 5) {
+      url = 'https://synergia.librus.pl/wiadomosci/5';
     }
 
     if (page > 1) {
@@ -139,8 +141,8 @@ export class Messages {
 
   /**
    * Pobiera pełną treść i załączniki konkretnej wiadomości
-   * @param {string|number} messageId Identyfikator wiadomości
-   * @param {number} [folderId=1] Identyfikator folderu (domyślnie 1 - odebrane)
+   * @param {string|number} messageId Identyfikator wiadomości lub relatywny/pełny URL wiadomości
+   * @param {number} [folderId=1] Identyfikator folderu (1 = odebrane, 2/6 = wysłane, 3/7 = kosz)
    * @returns {Promise<import('../parsers/MessagesParser.js').MessageDetails>}
    */
   async getMessage(messageId, folderId = 1) {
@@ -152,20 +154,37 @@ export class Messages {
     if (typeof messageId === 'string' && messageId.includes('/')) {
       url = messageId.startsWith('http') ? messageId : `https://synergia.librus.pl${messageId.startsWith('/') ? '' : '/'}${messageId}`;
     } else {
-      url = `https://synergia.librus.pl/wiadomosci/${folderId}/5/${messageId}/f0`;
+      const isSent = folderId === 2 || folderId === 6;
+      const isTrash = folderId === 3 || folderId === 7;
+      const fNum = isSent ? 6 : (isTrash ? 7 : 5);
+      // W Synergii wiadomości wysłane mają URL w formacie /wiadomosci/1/6/{id}/f0 lub /wiadomosci/6/{id}
+      url = isSent 
+        ? `https://synergia.librus.pl/wiadomosci/1/6/${messageId}/f0`
+        : `https://synergia.librus.pl/wiadomosci/${folderId}/${fNum}/${messageId}/f0`;
     }
 
     const res = await this.http.get(url);
     let html = await res.text();
 
-    // Fallback do prostego URL jeśli 5/f0 nie istnieje
+    // Fallback do prostego URL jeśli f0 nie istnieje
     if (res.status === 404 || html.includes('Brak dostępu')) {
-      const fallbackUrl = `https://synergia.librus.pl/wiadomosci/${folderId}/${messageId}`;
+      const isSent = folderId === 2 || folderId === 6;
+      const fallbackFolder = isSent ? 6 : folderId;
+      const fallbackUrl = `https://synergia.librus.pl/wiadomosci/${fallbackFolder}/${messageId}`;
       const fallbackRes = await this.http.get(fallbackUrl);
       html = await fallbackRes.text();
     }
 
     return parseMessageDetails(html, messageId);
+  }
+
+  /**
+   * Pobiera pełną treść i załączniki wiadomości wysłanej
+   * @param {string|number} messageId Identyfikator wiadomości lub link do wiadomości
+   * @returns {Promise<import('../parsers/MessagesParser.js').MessageDetails>}
+   */
+  async getSentMessage(messageId) {
+    return this.getMessage(messageId, 6);
   }
 
   /**

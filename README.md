@@ -172,14 +172,14 @@ const addedEvents = await client.timetable.getAddedSinceLastLogin();
 }
 ```
 
-### 4. Obsługa Wiadomości (Skrzynka odbiorcza, treść, załączniki)
+### 4. Obsługa Wiadomości (Skrzynka odbiorcza, wysłane, treść, załączniki)
 ```javascript
 import { LibrusClient } from './src/index.js';
 
 const client = new LibrusClient();
 await client.login('12312130', 'TwojeHaslo123#');
 
-// Pobranie listy wiadomości ze skrzynki odbiorczej
+// 1. Pobranie listy wiadomości ze skrzynki odbiorczej
 const inbox = await client.messages.getInbox();
 console.log(`Liczba wiadomości: ${inbox.length}`);
 
@@ -187,11 +187,26 @@ for (const msg of inbox) {
   console.log(`[${msg.id}] Od: ${msg.sender} | Temat: ${msg.subject} | Przeczytana: ${msg.isRead}`);
 }
 
-// Pobranie pełnej treści pierwszej wiadomości
+// Pobranie pełnej treści pierwszej wiadomości odebranej
 if (inbox.length > 0) {
   const details = await client.messages.getMessage(inbox[0].id);
   console.log('Treść wiadomości:\n', details.content);
   console.log('Załączniki:', details.attachments);
+}
+
+// 2. Pobranie wiadomości wysłanych (skrzynka nadawcza)
+const sent = await client.messages.getSent();
+console.log(`Liczba wiadomości wysłanych: ${sent.length}`);
+
+for (const msg of sent) {
+  console.log(`[${msg.id}] Do: ${msg.sender} | Temat: ${msg.subject} | Data: ${msg.date}`);
+}
+
+// Pobranie pełnej treści wiadomości wysłanej
+if (sent.length > 0) {
+  const sentDetails = await client.messages.getSentMessage(sent[0].id);
+  console.log('Adresat:', sentDetails.recipient);
+  console.log('Treść wiadomości wysłanej:\n', sentDetails.content);
 }
 ```
 

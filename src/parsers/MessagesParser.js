@@ -101,14 +101,28 @@ export function parseMessagesList(html) {
 
     // 3. Wyszukiwanie kolumny z datą (format RRRR-MM-DD HH:MM:SS lub RRRR-MM-DD)
     let date = '';
-    const dateRegex = /\d{4}-\d{2}-\d{2}/;
+    const dateExactRegex = /^\d{4}-\d{2}-\d{2}(?:\s+\d{2}:\d{2}(?::\d{2})?)?$/;
+    const dateExtractRegex = /\b\d{4}-\d{2}-\d{2}(?:\s+\d{2}:\d{2}(?::\d{2})?)?\b/;
 
+    // Najpierw szukamy komórki, która zawiera tylko lub głównie datę
     tds.each((idx, td) => {
       const text = $(td).text().trim().replace(/\s+/g, ' ');
-      if (dateRegex.test(text) && !date) {
+      if (dateExactRegex.test(text) && !date) {
         date = text;
       }
     });
+
+    // Fallback: jeśli nie znaleziono czystej daty, wyciągamy datę z komórek pomijając temat/nadawcę
+    if (!date) {
+      tds.each((idx, td) => {
+        const text = $(td).text().trim().replace(/\s+/g, ' ');
+        if (text === sender || text === subject) return;
+        const match = text.match(dateExtractRegex);
+        if (match && !date) {
+          date = match[0];
+        }
+      });
+    }
 
     // 4. Status przeczytania
     const linkEl = $(tr).find('a[href*="/wiadomosci/"]').last();
@@ -170,6 +184,22 @@ export function parseMessageDetails(html, messageId = '') {
       else if (text.startsWith('Adresat') && !recipient) recipient = text.replace(/^Adresat\s*/i, '');
     }
   });
+
+  // W wiadomościach wysłanych odbiorca często znajduje się w tabeli "Przeczytano" (np. Balcerzak Katarzyna | 2026-09-29 13:02:12)
+  if (!recipient) {
+    $('table.stretch').each((_, tbl) => {
+      const firstRowText = $(tbl).find('tr').first().text().trim();
+      if (firstRowText.includes('Przeczytano') || firstRowText.includes('Adresat')) {
+        const dataRow = $(tbl).find('tr').eq(1);
+        if (dataRow.length > 0) {
+          const recCell = dataRow.find('td').first().text().trim().replace(/\s+/g, ' ');
+          if (recCell && !recCell.toLowerCase().includes('przeczytano')) {
+            recipient = recCell;
+          }
+        }
+      }
+    });
+  }
 
   // Treść wiadomości
   let contentContainer = $('.container-message-content');

@@ -76,3 +76,29 @@ test('MessagesParser - parseMessageDetails from fixture HTML', () => {
   assert.strictEqual(details.attachments[0].id, '9991');
   assert.strictEqual(details.attachments[0].size, '245 KB');
 });
+
+test('MessagesParser - parseMessagesList for sent messages (skrzynka wysłanych)', () => {
+  const html = fs.readFileSync('test/fixtures/messages-sent-list.html', 'utf8');
+  const messages = parseMessagesList(html);
+
+  assert.ok(messages.length > 0, 'Powinny zostać sparsowane wiadomości wysłane');
+  assert.strictEqual(messages[0].id, '2168432');
+  assert.ok(messages[0].sender.includes('Nauczyciel Testowy'));
+  assert.strictEqual(messages[0].subject, 'Podręcznik hiszpanski');
+  assert.strictEqual(messages[0].date, '2026-09-29 12:51:32');
+  assert.strictEqual(messages[0].isRead, true);
+  assert.strictEqual(messages[0].hasAttachment, false);
+});
+
+test('MessagesParser - parseMessageDetails for sent message details', () => {
+  const html = fs.readFileSync('test/fixtures/messages-sent-detail.html', 'utf8');
+  const details = parseMessageDetails(html, '2168432');
+
+  assert.strictEqual(details.id, '2168432');
+  assert.ok(details.recipient.includes('Nauczyciel Testowy'));
+  assert.strictEqual(details.subject, 'Podręcznik hiszpanski');
+  assert.strictEqual(details.date, '2026-09-29 12:51:32');
+  assert.ok(details.content.includes('podręcznika do hiszpańskiego'));
+  assert.strictEqual(details.attachments.length, 0);
+});
+
